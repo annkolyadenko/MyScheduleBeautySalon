@@ -10,7 +10,7 @@ public interface PagesJSP {
     String CLIENT_PAGE = "/jsp/authorized/client/clientPage.jsp";
     String ADMIN_PAGE = "/jsp/authorized/administrator/adminPage.jsp";
     String MASTER_PAGE = "/jsp/authorized/master/masterPage.jsp";
-    String MASTER_LIST = "/jsp/common/masterList.jsp";
+    String BOOKING_LIST = "/jsp/common/bookingList.jsp";
     String BOOKING_PAGE = "/jsp/common/booking.jsp";
     String ACCESS_DENIED = "/jsp/error-403.jsp";
     String COMMENT_LIST = "/jsp/authorized/admin/commentList.jsp";

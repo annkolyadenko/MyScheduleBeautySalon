@@ -116,6 +116,7 @@ public class BookingDAO {
             ResultSet rs = ps.executeQuery();
             System.out.println("ResultSet executed");
             while (rs.next()) {
+                System.out.println("HOHOHO");
                 Booking booking = new Booking();
                 bookingId = rs.getInt("booking_id");
                 System.out.println("bookingID"+bookingId);
