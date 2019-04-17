@@ -9,28 +9,29 @@
 <body>
 <c:import url="/jsp/common/navigation.jsp"></c:import>
 <div class="container" style="height: 100%">
-<div class="row">
-    <form>
-    ${sessionScope.authorizedUser.name}, you've chosen:
-    <table class="table table-bordered">
-        <thead class="thead-dark">
-        <tr>
-            <th scope="col">Master name</th>
-            <th scope="col">Date</th>
-            <th scope="col">Time</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>${requestScope.master.name}</td>
-            <td>${requestScope.chosenDate}</td>
-            <td>${requestScope.chosenTime}</td>
-        </tr>
-        </tbody>
-    </table>
-        <button type="submit" name="command" value="ADD_BOOKING"></button>
-    </form>
-</div>
+    <div class="row">
+        <form>
+            <br>
+            ${sessionScope.authorizedUser.name}, you've chosen:
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Master name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>${requestScope.masterName}</td>
+                    <td>${requestScope.chosenDate}</td>
+                    <td>${requestScope.chosenTime}</td>
+                </tr>
+                </tbody>
+            </table>
+            <button type="submit" name="command" value="SUBMIT_BOOKING">Submit</button>
+        </form>
+    </div>
 </div>
 </body>
 <c:import url="/jsp/common/footer.jsp"></c:import>
