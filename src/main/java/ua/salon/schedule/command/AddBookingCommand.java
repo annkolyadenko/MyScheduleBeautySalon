@@ -24,9 +24,12 @@ public class AddBookingCommand implements ActionCommand {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String masterName = (String)request.getAttribute("masterName");
-        rootLogger.debug("masterName");
+        rootLogger.debug("masterName" + masterName);
+        String chosenDate = (String)request.getAttribute("chosenDate");
+        rootLogger.debug("chosenDate" + chosenDate);
+        String chosenTime = (String)request.getAttribute("chosenTime");
+        rootLogger.debug("chosenTime" + chosenTime);
         /*String chosenDate = request.get*/
-
         return PagesJSP.BOOKING_PAGE;
     }
 }
