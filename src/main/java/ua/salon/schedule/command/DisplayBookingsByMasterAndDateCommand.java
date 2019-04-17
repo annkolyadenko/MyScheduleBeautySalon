@@ -55,7 +55,7 @@ public class DisplayBookingsByMasterAndDateCommand implements ActionCommand {
         request.setAttribute("bookings", getScheduleFormedBookingList(bookingList));
         rootLogger.debug("Size of booking list: " + bookingList.size());
         rootLogger.debug("redirecting from DisplayBookingsByMasterAndDateCommand.class to PagesJSP.BOOKING_TABLE");
-        return PagesJSP.MASTER_LIST;
+        return PagesJSP.BOOKING_LIST;
     }
 
     private ArrayList<Booking> getScheduleFormedBookingList(List<Booking> bookingList) {
