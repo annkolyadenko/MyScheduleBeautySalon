@@ -29,9 +29,8 @@ public class GetAllMastersCommand implements ActionCommand {
         List<User> mastersList = userService.getAllMasters();
         rootLogger.debug(mastersList);
         session.setAttribute("mastersList", mastersList);
-        /*request.setAttribute("mastersList", mastersList);*/
         rootLogger.debug("Size of booking list: " + mastersList.size());
-        return PagesJSP.MASTER_LIST;
+        return PagesJSP.BOOKING_LIST;
     }
 
 }
