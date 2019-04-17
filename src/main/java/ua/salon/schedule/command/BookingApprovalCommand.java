@@ -26,6 +26,6 @@ public class BookingApprovalCommand implements ActionCommand {
         String masterName = (String)request.getAttribute("masterName");
         rootLogger.debug("masterName");
 
-        return PagesJSP.MASTER_LIST;
+        return PagesJSP.BOOKING_LIST;
     }
 }
