@@ -8,7 +8,7 @@
     <uri>customtags</uri>
     <tag>
         <name>booking-table</name>
-        <tag-class>ua.salon.schedule.tags.BookingTableTag</tag-class>
+        <tag-class>main.schedule.tags.BookingTableTag</tag-class>
         <body-content>scriptless</body-content>
         <attribute>
             <name>rows</name>
@@ -23,7 +23,7 @@
     </tag>
     <tag>
         <name>if-user</name>
-        <tag-class>ua.salon.schedule.tags.UserRoleTag</tag-class>
+        <tag-class>main.schedule.tags.UserRoleTag</tag-class>
         <body-content>scriptless</body-content>
         <attribute>
             <name>role</name>
