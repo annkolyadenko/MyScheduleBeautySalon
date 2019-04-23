@@ -11,7 +11,7 @@ import ua.salon.schedule.services.UserService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class BookingApprovalCommand implements ActionCommand {
+public class ApproveBookingCommand implements ActionCommand {
     private static final Logger rootLogger = LogManager.getRootLogger();
     private BookingService bookingService;
     private UserService userService;
