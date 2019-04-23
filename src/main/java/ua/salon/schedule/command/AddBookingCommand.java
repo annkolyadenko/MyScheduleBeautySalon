@@ -37,10 +37,10 @@ public class AddBookingCommand implements ActionCommand {
         request.setAttribute("bookMasterName", masterName);
         String chosenDate = request.getParameter("bookingChosenDate");
         rootLogger.debug("bookingChosenDate: " + chosenDate);
-        request.setAttribute("bookDate", chosenDate);
+        session.setAttribute("bookDate", chosenDate);
         String chosenTime = request.getParameter("bookingChosenTime");
         rootLogger.debug("bookingChosenTime: " + chosenTime);
-        request.setAttribute("bookTime", chosenTime);
+        session.setAttribute("bookTime", chosenTime);
         return PagesJSP.BOOKING_PAGE;
     }
 }
