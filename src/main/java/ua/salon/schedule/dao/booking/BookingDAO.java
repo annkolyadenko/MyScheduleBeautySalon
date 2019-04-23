@@ -114,16 +114,12 @@ public class BookingDAO {
             ps.setInt(1, masterId);
             ps.setString(2, date);
             ResultSet rs = ps.executeQuery();
-            System.out.println("ResultSet executed");
+            rootLogger.debug("ResultSet in getAllBookingsByMasterIdAndDate() method executed");
             while (rs.next()) {
-                System.out.println("HOHOHO");
                 Booking booking = new Booking();
                 bookingId = rs.getInt("booking_id");
-                System.out.println("bookingID"+bookingId);
                 clientId = rs.getInt("booking_client_id");
-                System.out.println("clientID"+clientId);
                 master = userDao.findUserById(masterId);
-                System.out.println("master"+master.toString());
                 client = userDao.findUserById(clientId);
                 Timestamp mySqlStart = rs.getTimestamp("schedule_slot_start");
                 Timestamp mySqlEnd = rs.getTimestamp("schedule_slot_end");
@@ -134,9 +130,8 @@ public class BookingDAO {
                 booking.setClient(client);
                 booking.setTimeSlotStart(timeSlotStart);
                 booking.setTimeSlotEnd(timeSlotEnd);
-                System.out.println("Booking"+booking);
+                rootLogger.debug("Booking"+booking);
                 bookingList.add(booking);
-                /*bookingList.addBooking(booking);*/
             }
         } catch (SQLException e) {
             rootLogger.warn("SQLException at getBookingsByMasterID()", e);

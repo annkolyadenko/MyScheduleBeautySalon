@@ -149,13 +149,14 @@
                                             Available
                                         </ctg:if-user>
                                         <ctg:if-user role="client">
-                                        <form class="form" method="POST" action="controller">
-                                            <input type="hidden" name="masterName" value="${requestScope.masterName}">
-                                            <input type="hidden" name="chosenDate" value="${requestScope.date}">
-                                            <input type="hidden" name="chosenTime" value="${i+8}:00">
-                                            <button type="submit" class="btn btn-primary" name="command" value="ADD_BOOKING">Make booking
-                                            </button>
-                                        </form>
+                                            <form class="form" method="POST" action="controller">
+                                                <input type="hidden" name="bookingChosenDate"
+                                                       value="${requestScope.date}">
+                                                <input type="hidden" name="bookingChosenTime" value="${i+8}:00">
+                                                <button type="submit" name="command"
+                                                        value="ADD_BOOKING">Make booking
+                                                </button>
+                                            </form>
                                         </ctg:if-user>
                                     </c:when>
                                 </c:choose>
@@ -169,6 +170,8 @@
     </div>
 </div>
 </body>
-<c:import url="/jsp/common/footer.jsp"></c:import>
+<footer>
+    <c:import url="/jsp/common/footer.jsp"></c:import>
+</footer>
 </html>
 

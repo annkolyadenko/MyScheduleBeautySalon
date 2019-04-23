@@ -45,6 +45,8 @@ public class DisplayBookingsByMasterAndDateCommand implements ActionCommand {
         rootLogger.debug("chosenDate: " + date);
         User master = userService.findUserById(masterId);
         rootLogger.debug("master: " + master);
+        //we set chosen master as session attribute with further processing (using in Booking DAO and/or delete)
+        session.setAttribute("chosenMaster", master);
         String masterName = master.getName();
         int masterPhone = master.getPhone();
         List<Booking> bookingList = bookingService.getAllBookingsByMasterIdAndDate(masterId, date);
@@ -52,6 +54,7 @@ public class DisplayBookingsByMasterAndDateCommand implements ActionCommand {
         request.setAttribute("date", date);
         request.setAttribute("masterName", masterName);
         request.setAttribute("masterPhone", masterPhone);
+        request.setAttribute("master", master);
         request.setAttribute("bookings", getScheduleFormedBookingList(bookingList));
         rootLogger.debug("Size of booking list: " + bookingList.size());
         rootLogger.debug("redirecting from DisplayBookingsByMasterAndDateCommand.class to PagesJSP.BOOKING_TABLE");
@@ -61,7 +64,7 @@ public class DisplayBookingsByMasterAndDateCommand implements ActionCommand {
     private ArrayList<Booking> getScheduleFormedBookingList(List<Booking> bookingList) {
         ArrayList<Booking> bookings = new ArrayList<>(9);
         for (int i = 0, j = 0; i < 9; i++) {
-            System.out.println(i);
+            rootLogger.debug(i);
             if (j != bookingList.size() && bookingList.get(j).getTime().equals((i + 8))) {
                 System.out.println("getTime: " + bookingList.get(j).getTime());
                 bookings.add(bookingList.get(j++));

@@ -13,6 +13,7 @@
         <form>
             <br>
             ${sessionScope.authorizedUser.name}, you've chosen:
+            <br>
             <table class="table table-bordered">
                 <thead class="thead-dark">
                 <tr>
@@ -23,13 +24,13 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>${requestScope.masterName}</td>
-                    <td>${requestScope.chosenDate}</td>
-                    <td>${requestScope.chosenTime}</td>
+                    <td>${bookMasterName}</td>
+                    <td>${bookDate}</td>
+                    <td>${bookTime}</td>
                 </tr>
                 </tbody>
             </table>
-            <button type="submit" name="command" value="SUBMIT_BOOKING">Submit</button>
+            <button type="submit" name="command" value="APPROVE_BOOKING">Submit</button>
         </form>
     </div>
 </div>
