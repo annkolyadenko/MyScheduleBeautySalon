@@ -31,7 +31,7 @@ public enum CommandEnum {
     },
     APPROVE_BOOKING {
         {
-            this.command = new BookingApprovalCommand();
+            this.command = new ApproveBookingCommand();
         }
     },
     ADD_BOOKING {

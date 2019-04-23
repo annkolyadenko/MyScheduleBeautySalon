@@ -11,6 +11,11 @@ img{
     height: auto;
 }
 
+img.beauty3{
+    width: 50px;!important;
+    height: 50px;!important;
+}
+
 .navbar{
     box-shadow: 0 0 5px rgba(0, 0, 0, .19);
     font-size: 20px;

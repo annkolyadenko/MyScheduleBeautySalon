@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ua.salon.schedule.command.factory.ActionCommand;
 import ua.salon.schedule.controller.PagesJSP;
+import ua.salon.schedule.model.booking.Booking;
 import ua.salon.schedule.services.BookingService;
 import ua.salon.schedule.services.service_factory.ServiceFactory;
 import ua.salon.schedule.services.UserService;
