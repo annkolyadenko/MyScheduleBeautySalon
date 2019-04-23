@@ -23,9 +23,18 @@ public class ApproveBookingCommand implements ActionCommand {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        String masterName = (String)request.getAttribute("masterName");
-        rootLogger.debug("masterName");
-
-        return PagesJSP.BOOKING_LIST;
+        Booking booking = new Booking();
+        rootLogger.debug("ApproveBookingCommand class started execute() method");
+        HttpSession session = request.getSession(false);
+        User authorizedUser = (User)session.getAttribute("authorizedUser");
+        rootLogger.debug("authorizedUser: "+ authorizedUser);
+        User master = (User)session.getAttribute("chosenMaster");
+        rootLogger.debug("chosenMaster: " + master);
+        String chosenDate = session.getAttribute("bookDate");
+        rootLogger.debug("bookDate:" + chosenDate);
+        String chosenTime = session.getParameter("bookingChosenTime");
+        rootLogger.debug("bookingChosenTime: " + chosenTime);
+        LocalDateTime timeSlotStart;
+        return PagesJSP.BOOKING_APPROVED;
     }
 }
