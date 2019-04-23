@@ -12,6 +12,7 @@ public interface PagesJSP {
     String MASTER_PAGE = "/jsp/authorized/master/masterPage.jsp";
     String BOOKING_LIST = "/jsp/common/bookingList.jsp";
     String BOOKING_PAGE = "/jsp/common/booking.jsp";
+    String BOOKING_APPROVED = "/jsp/common/bookingApproved.jsp";
     String ACCESS_DENIED = "/jsp/error-403.jsp";
     String COMMENT_LIST = "/jsp/authorized/admin/commentList.jsp";
     String PRICE_LIST = "/jsp/priceList.jsp";
