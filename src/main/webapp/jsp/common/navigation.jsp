@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Navigation</title>
 </head>
-<c:import url="/resources/dependencies.jsp"/>
+<c:import url="/jsp/dependencies.jsp"/>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="/resources/images/beauty5.jpg" width="120" height="120"></a>
+        <a class="navbar-brand" href="#"><img src="/web_resources/images/beauty3.jpg" width="120" height="120"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

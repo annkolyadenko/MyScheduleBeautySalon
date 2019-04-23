@@ -5,7 +5,7 @@
     <link rel="shortcut icon" href="/resources/images/eye.jpeg" type="image/ico">
     <title>Login</title>
 </head>
-<c:import url="/resources/dependencies.jsp"/>
+<c:import url="/jsp/dependencies.jsp"/>
 <body>
 <c:import url="/jsp/common/navigation.jsp"></c:import>
 <h1>Welcome on board!</h1>

@@ -18,7 +18,7 @@
     <Loggers>
         <!-- After establishing application - change level to error, additivity - false -->
         <!--
-        <Logger name="ua.salon.schedule.dao.booking.BookingDAO" level="info" additivity="true">
+        <Logger name="main.schedule.dao.booking.BookingDAO" level="info" additivity="true">
             <AppenderRef ref="Console"/>
         </Logger> -->
 

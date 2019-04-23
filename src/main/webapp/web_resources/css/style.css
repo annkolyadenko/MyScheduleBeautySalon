@@ -1,0 +1,57 @@
+body{
+    font-family: 'Open-sans', sans-serif;
+    font-size: 12px;
+    color: #545353;
+    background: #fdfcfb;
+    font-weight: normal;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+img.beauty3{
+    width: 50px;!important;
+    height: 50px;!important;
+}
+
+.navbar{
+    box-shadow: 0 0 5px rgba(0, 0, 0, .19);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.nav .nav-header{
+    /*font-size: 15px;*/
+    text-transform: none;
+    /*color: #fdfcfb;*/
+    color: #d42819;
+}
+
+.nav > li.active > a.nav-link{
+    border-bottom: 2px solid #d42819;
+}
+
+.nav .nav-item > a:hover{
+    border-bottom: 2px solid #d42819;
+}
+
+@media only screen and (max-width: 992px){
+    .nav > li.active > a.nav-link {
+        border-bottom: 0;
+    }
+
+    .nav .nav-item > a:hover{
+        border-bottom: 0;
+    }
+}
+.slogan{
+    margin-bottom: 50px;
+    text-align: center;
+    color: #545353;
+}
+footer hr{
+    border-color: #545353;
+}
+
+
