@@ -1,7 +1,7 @@
-package main.schedule.command;
+package ua.salon.schedule.command;
 
-import main.schedule.command.factory.ActionCommand;
-import main.schedule.manager.ConfigurationManager;
+import ua.salon.schedule.command.factory.ActionCommand;
+import ua.salon.schedule.manager.ConfigurationManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

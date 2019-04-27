@@ -1,7 +1,7 @@
-package main.schedule.model.booking;
+package ua.salon.schedule.model.booking;
 
-import main.schedule.dao.user.UserDAO;
-import main.schedule.model.user.User;
+import ua.salon.schedule.dao.user.UserDAO;
+import ua.salon.schedule.model.user.User;
 
 public class BookingTableTest {
     public static void main(String[] args) {

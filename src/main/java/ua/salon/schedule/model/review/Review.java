@@ -1,6 +1,6 @@
-package main.schedule.model.review;
+package ua.salon.schedule.model.review;
 
-import main.schedule.model.booking.Booking;
+import ua.salon.schedule.model.booking.Booking;
 
 public class Review {
     private int id;

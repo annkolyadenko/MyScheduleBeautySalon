@@ -1,4 +1,4 @@
-package main.schedule.tags;
+package ua.salon.schedule.tags;
 
 import javax.servlet.jsp.JspTagException;
 import javax.servlet.jsp.tagext.TagSupport;

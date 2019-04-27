@@ -1,7 +1,7 @@
-package main.schedule.command.factory;
+package ua.salon.schedule.command.factory;
 
-import main.schedule.command.EmptyCommand;
-import main.schedule.manager.MessageManager;
+import ua.salon.schedule.command.EmptyCommand;
+import ua.salon.schedule.manager.MessageManager;
 
 import javax.servlet.http.HttpServletRequest;
 

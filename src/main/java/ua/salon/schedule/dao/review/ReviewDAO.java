@@ -1,12 +1,12 @@
-package main.schedule.dao.review;
+package ua.salon.schedule.dao.review;
 
 import org.apache.logging.log4j.*;
-import main.schedule.connection_utils.DatasourceJNDI;
-import main.schedule.dao.booking.BookingDAO;
-import main.schedule.dao.user.UserDAO;
-import main.schedule.model.booking.Booking;
-import main.schedule.model.review.Review;
-import main.schedule.model.user.User;
+import ua.salon.schedule.connection_utils.DatasourceJNDI;
+import ua.salon.schedule.dao.booking.BookingDAO;
+import ua.salon.schedule.dao.user.UserDAO;
+import ua.salon.schedule.model.booking.Booking;
+import ua.salon.schedule.model.review.Review;
+import ua.salon.schedule.model.user.User;
 
 
 import java.sql.*;

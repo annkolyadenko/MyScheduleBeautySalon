@@ -1,9 +1,9 @@
-package main.schedule.services;
+package ua.salon.schedule.services;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import main.schedule.dao.user.UserDAO;
-import main.schedule.model.user.User;
+import ua.salon.schedule.dao.user.UserDAO;
+import ua.salon.schedule.model.user.User;
 
 import java.util.List;
 

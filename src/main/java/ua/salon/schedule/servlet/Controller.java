@@ -1,9 +1,9 @@
-package main.schedule.servlet;
+package ua.salon.schedule.servlet;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import main.schedule.command.factory.ActionCommand;
-import main.schedule.command.factory.ActionFactory;
+import ua.salon.schedule.command.factory.ActionCommand;
+import ua.salon.schedule.command.factory.ActionFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

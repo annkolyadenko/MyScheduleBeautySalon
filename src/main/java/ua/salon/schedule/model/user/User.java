@@ -1,4 +1,4 @@
-package main.schedule.model.user;
+package ua.salon.schedule.model.user;
 
 import java.util.Objects;
 

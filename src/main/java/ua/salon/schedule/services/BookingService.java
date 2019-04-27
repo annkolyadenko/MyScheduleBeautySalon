@@ -1,7 +1,7 @@
-package main.schedule.services;
+package ua.salon.schedule.services;
 
-import main.schedule.dao.booking.BookingDAO;
-import main.schedule.model.booking.Booking;
+import ua.salon.schedule.dao.booking.BookingDAO;
+import ua.salon.schedule.model.booking.Booking;
 
 import java.util.List;
 

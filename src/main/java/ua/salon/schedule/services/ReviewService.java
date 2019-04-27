@@ -1,7 +1,7 @@
-package main.schedule.services;
+package ua.salon.schedule.services;
 
-import main.schedule.dao.review.ReviewDAO;
-import main.schedule.model.review.Review;
+import ua.salon.schedule.dao.review.ReviewDAO;
+import ua.salon.schedule.model.review.Review;
 
 import java.util.List;
 

@@ -1,10 +1,11 @@
-package main.schedule.dao;
+package ua.salon.schedule.dao;
 
-import main.schedule.connection_utils.connection_exceptions.ConnectionNotOpenedException;
+import ua.salon.schedule.connection_utils.connection_exceptions.ConnectionNotOpenedException;
 
 import java.sql.SQLException;
 
 public class DAOTest {
+
     public static void main(String[] args) throws SQLException, ConnectionNotOpenedException {
         /*UserDAO userDAO = new UserDAO();
         User master1 = userDAO.findUserById(25);

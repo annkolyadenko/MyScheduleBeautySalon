@@ -1,6 +1,6 @@
-package main.schedule.model.booking;
+package ua.salon.schedule.model.booking;
 
-import main.schedule.model.user.User;
+import ua.salon.schedule.model.user.User;
 
 import java.util.ArrayList;
 import java.util.List;

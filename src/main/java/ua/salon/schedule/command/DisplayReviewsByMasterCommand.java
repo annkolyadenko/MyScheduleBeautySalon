@@ -1,6 +1,6 @@
-package main.schedule.command;
+package ua.salon.schedule.command;
 
-import main.schedule.command.factory.ActionCommand;
+import ua.salon.schedule.command.factory.ActionCommand;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -1,13 +1,13 @@
-package main.schedule.command;
+package ua.salon.schedule.command;
 
 import org.apache.logging.log4j.*;
-import main.schedule.codec.MD5Util;
-import main.schedule.controller.PagesJSP;
-import main.schedule.command.factory.ActionCommand;
-import main.schedule.model.user.User;
-import main.schedule.model.user.UserRole;
-import main.schedule.services.service_factory.ServiceFactory;
-import main.schedule.services.UserService;
+import ua.salon.schedule.codec.MD5Util;
+import ua.salon.schedule.controller.PagesJSP;
+import ua.salon.schedule.command.factory.ActionCommand;
+import ua.salon.schedule.model.user.User;
+import ua.salon.schedule.model.user.UserRole;
+import ua.salon.schedule.services.service_factory.ServiceFactory;
+import ua.salon.schedule.services.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

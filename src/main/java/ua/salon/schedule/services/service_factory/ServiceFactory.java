@@ -1,8 +1,8 @@
-package main.schedule.services.service_factory;
+package ua.salon.schedule.services.service_factory;
 
-import main.schedule.services.BookingService;
-import main.schedule.services.ReviewService;
-import main.schedule.services.UserService;
+import ua.salon.schedule.services.BookingService;
+import ua.salon.schedule.services.ReviewService;
+import ua.salon.schedule.services.UserService;
 
 /**
  * Factory for creating instances of service layer MVC

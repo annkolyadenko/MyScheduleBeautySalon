@@ -1,8 +1,9 @@
-package main.schedule.codec;
+package ua.salon.schedule.codec;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
 /** Written by @Devcolibri MD5Util because MD5-coding Apache util compiling by Maven not always(in my case) */
 public class MD5Util {
     public static String md5Custom(String st) {

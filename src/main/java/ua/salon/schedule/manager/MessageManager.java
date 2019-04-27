@@ -1,4 +1,4 @@
-package main.schedule.manager;
+package ua.salon.schedule.manager;
 
 import java.util.ResourceBundle;
 

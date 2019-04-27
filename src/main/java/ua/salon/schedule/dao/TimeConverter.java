@@ -1,6 +1,6 @@
-package main.schedule.dao;
+package ua.salon.schedule.dao;
 
-import main.schedule.model.booking.Booking;
+import ua.salon.schedule.model.booking.Booking;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

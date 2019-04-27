@@ -1,4 +1,4 @@
-package main.schedule.command.factory;
+package ua.salon.schedule.command.factory;
 
 public class TimeSpanHolder {
 }

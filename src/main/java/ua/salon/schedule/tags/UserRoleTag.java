@@ -1,6 +1,6 @@
-package main.schedule.tags;
+package ua.salon.schedule.tags;
 
-import main.schedule.model.user.User;
+import ua.salon.schedule.model.user.User;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.jsp.JspException;

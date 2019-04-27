@@ -1,4 +1,4 @@
-package main.schedule.controller;
+package ua.salon.schedule.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;

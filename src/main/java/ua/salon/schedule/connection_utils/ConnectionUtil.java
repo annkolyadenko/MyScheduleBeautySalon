@@ -1,9 +1,9 @@
-package main.schedule.connection_utils;
+package ua.salon.schedule.connection_utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import main.schedule.connection_utils.connection_exceptions.ConnectionNotClosedException;
-import main.schedule.connection_utils.connection_exceptions.ConnectionNotOpenedException;
+import ua.salon.schedule.connection_utils.connection_exceptions.ConnectionNotClosedException;
+import ua.salon.schedule.connection_utils.connection_exceptions.ConnectionNotOpenedException;
 
 import java.sql.*;
 import java.util.ResourceBundle;

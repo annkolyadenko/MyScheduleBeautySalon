@@ -1,4 +1,4 @@
-package main.schedule.servlet;
+package ua.salon.schedule.servlet;
 
 
 /*@WebListener

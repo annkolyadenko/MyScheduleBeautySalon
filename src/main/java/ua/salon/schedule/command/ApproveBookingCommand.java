@@ -1,15 +1,15 @@
-package main.schedule.command;
+package ua.salon.schedule.command;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import main.schedule.command.factory.ActionCommand;
-import main.schedule.controller.PagesJSP;
-import main.schedule.model.booking.Booking;
-import main.schedule.services.BookingService;
-import main.schedule.services.service_factory.ServiceFactory;
-import main.schedule.services.UserService;
+import ua.salon.schedule.command.factory.ActionCommand;
+import ua.salon.schedule.controller.PagesJSP;
+import ua.salon.schedule.model.booking.Booking;
+import ua.salon.schedule.services.BookingService;
+import ua.salon.schedule.services.service_factory.ServiceFactory;
+import ua.salon.schedule.services.UserService;
 
-import main.schedule.model.user.User;
+import ua.salon.schedule.model.user.User;
 
 import java.time.LocalDateTime;
 
@@ -41,6 +41,7 @@ public class ApproveBookingCommand implements ActionCommand {
         String chosenTime = (String)session.getAttribute("bookTime");
         rootLogger.debug("bookingChosenTime: " + chosenTime);
         LocalDateTime timeSlotStart;
+        LocalDateTime timeSlotEnd;
         return PagesJSP.BOOKING_APPROVED;
     }
 }

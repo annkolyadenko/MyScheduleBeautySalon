@@ -1,11 +1,11 @@
-package main.schedule.dao.booking;
+package ua.salon.schedule.dao.booking;
 
 import org.apache.logging.log4j.*;
-import main.schedule.connection_utils.DatasourceJNDI;
-import main.schedule.dao.TimeConverter;
-import main.schedule.dao.user.UserDAO;
-import main.schedule.model.booking.Booking;
-import main.schedule.model.user.User;
+import ua.salon.schedule.connection_utils.DatasourceJNDI;
+import ua.salon.schedule.dao.TimeConverter;
+import ua.salon.schedule.dao.user.UserDAO;
+import ua.salon.schedule.model.booking.Booking;
+import ua.salon.schedule.model.user.User;
 
 import java.sql.*;
 import java.time.LocalDateTime;

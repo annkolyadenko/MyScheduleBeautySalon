@@ -1,10 +1,10 @@
-package main.schedule.dao.user;
+package ua.salon.schedule.dao.user;
 
 import org.apache.logging.log4j.*;
-import main.schedule.codec.MD5Util;
-import main.schedule.connection_utils.DatasourceJNDI;
-import main.schedule.model.user.User;
-import main.schedule.model.user.UserRole;
+import ua.salon.schedule.codec.MD5Util;
+import ua.salon.schedule.connection_utils.DatasourceJNDI;
+import ua.salon.schedule.model.user.User;
+import ua.salon.schedule.model.user.UserRole;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

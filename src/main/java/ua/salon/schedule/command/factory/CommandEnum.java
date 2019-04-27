@@ -1,8 +1,8 @@
-package main.schedule.command.factory;
+package ua.salon.schedule.command.factory;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import main.schedule.command.*;
+import ua.salon.schedule.command.*;
 
 /**
  * Enum that contains enumeration of all commands used in application
