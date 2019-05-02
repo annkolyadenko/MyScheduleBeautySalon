@@ -20,8 +20,7 @@ public class BookingDAO {
 
     private static final String ADD_BOOKING = "INSERT INTO booking (booking_master_id, booking_client_id, schedule_slot_start, schedule_slot_end) VALUES (?,?,?,?)";
     private static final String FIND_BOOKING_BY_MASTER_ID = "SELECT * FROM booking WHERE booking_master_id = ?";
-    /*This is the fastest-performing, lowest-memory, least-resource intensive method*/
-    private static final String FIND_BOOKING_BY_MASTER_ID_AND_DATE = "SELECT * FROM booking WHERE booking_master_id = ? AND DATE(schedule_slot_start) = ? ";
+    private static final String FIND_BOOKING_BY_MASTER_ID_AND_DATE = "SELECT * FROM booking WHERE booking_master_id = ? AND DATE(schedule_slot_start) = ? ORDER BY schedule_slot_start ASC";
     private static final String FIND_BOOKING_BY_ID = "SELECT * FROM booking WHERE booking_id = ?";
 
     public BookingDAO() {
@@ -39,8 +38,10 @@ public class BookingDAO {
             ps.setTimestamp(3, mySqlStart);
             ps.setTimestamp(4, mySqlEnd);
             ps.executeUpdate();
+            rootLogger.debug("prepareStatement(ADD_BOOKING) executeUpdate in BookingDAO.class");
         } catch (SQLException e) {
             rootLogger.warn("SQLException in adding user to database", e);
+            //need to be changed to instanceOf!
         } finally {
            /* try {
               DatasourceJNDI.closeConnection(connection, ps);

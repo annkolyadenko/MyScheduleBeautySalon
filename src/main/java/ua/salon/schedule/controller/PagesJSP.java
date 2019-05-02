@@ -16,4 +16,5 @@ public interface PagesJSP {
     String ACCESS_DENIED = "/jsp/error-403.jsp";
     String COMMENT_LIST = "/jsp/authorized/admin/commentList.jsp";
     String PRICE_LIST = "/jsp/priceList.jsp";
+    String SHIT_HAPPENS = "/jsp/common/shitHappens.jsp";
 }

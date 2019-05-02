@@ -1,8 +1,12 @@
 package ua.salon.schedule.dao;
 
 import ua.salon.schedule.connection_utils.connection_exceptions.ConnectionNotOpenedException;
+import ua.salon.schedule.useful_utils.Formatter;
+import ua.salon.schedule.useful_utils.TimeUtil;
 
 import java.sql.SQLException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class DAOTest {
 
@@ -30,6 +34,13 @@ public class DAOTest {
         System.out.println(booking1);
         System.out.println(booking2);
         System.out.println(booking3);*/
+        /*System.out.println(TimeUtil.addTimeGap("8:00"));*/
+        String str1 = "1986-01-21";
+        String str2 = "8:30";
+        String str3 = TimeUtil.addTimeGap(str2);
+        System.out.println(str3);
+        LocalDateTime dateTime = LocalDateTime.parse(str1+" "+str2, Formatter.getFormatter());
+        System.out.println(dateTime);
     }
 }
 

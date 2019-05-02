@@ -67,10 +67,11 @@ public class ConnectionUtil {
                 rootlogger.info("Connection with database is closed");
             }
             else{
-                throw new ConnectionNotClosedException("Exception in closeConnection() method: " + ConnectionUtil.class);
+                throw new ConnectionNotClosedException(new Throwable());
             }
         }catch (SQLException e) {
             rootlogger.warn("SQLException at closeConnection method()", e);
+            throw new ConnectionNotClosedException(e);
         }
     }
 
@@ -89,10 +90,11 @@ public class ConnectionUtil {
                 rootlogger.info("Connection with database is closed");
             }
             else{
-                throw new ConnectionNotClosedException("Exception in closeConnection() method: " + ConnectionUtil.class);
+                throw new ConnectionNotClosedException(new Throwable());
             }
         }catch (SQLException e) {
             rootlogger.warn("SQLException at closeConnection method()", e);
+            throw new ConnectionNotClosedException(e);
         }
     }
 }

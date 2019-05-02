@@ -2,6 +2,7 @@ package ua.salon.schedule.model.booking;
 
 import ua.salon.schedule.model.user.User;
 import ua.salon.schedule.model.user.UserRole;
+import ua.salon.schedule.useful_utils.Formatter;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -80,8 +81,6 @@ public class Booking {
         return Objects.hash(bookingId, master, client, timeSlotStart, timeSlotEnd);
     }
 
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-
     @Override
     public String toString() {
 
@@ -89,8 +88,8 @@ public class Booking {
                 "bookingId=" + bookingId +
                 ", master=" + master.getName() +
                 ", client=" + client.getName() +
-                ", "+ timeSlotStart.format(formatter) +
-                " - " + timeSlotEnd.format(formatter) +
+                ", "+ timeSlotStart.format(Formatter.getFormatter()) +
+                " - " + timeSlotEnd.format(Formatter.getFormatter()) +
                 '}';
     }
 }

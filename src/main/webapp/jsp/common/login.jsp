@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <link rel="shortcut icon" href="/resources/images/eye.jpeg" type="image/ico">
+    <link rel="shortcut icon" href="/web_resources/images/eye.jpeg" type="image/ico">
     <title>Login</title>
 </head>
 <c:import url="/jsp/dependencies.jsp"/>

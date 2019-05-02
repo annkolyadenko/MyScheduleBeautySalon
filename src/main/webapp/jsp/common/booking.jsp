@@ -3,7 +3,7 @@
 <%@ taglib prefix="ctg" uri="customtags" %>
 <html>
 <head>
-    <link rel="shortcut icon" href="/resources/images/eye.jpeg" type="image/ico">
+    <link rel="shortcut icon" href="/web_resources/images/eye.jpeg" type="image/ico">
     <title>Bookings</title>
 </head>
 <body>

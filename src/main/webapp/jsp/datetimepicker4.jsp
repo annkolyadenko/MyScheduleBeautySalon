@@ -3,7 +3,7 @@
 <%--No need to use it now, because Bootstrap has nice data type = "date" but let it be here as a strong sign of my ignorance--%>
 <html>
 <head>
-    <link rel="shortcut icon" href="/resources/images/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="/web_resources/images/favicon.ico" type="image/ico">
     <title>Schedule</title>
 </head>
 <body>
