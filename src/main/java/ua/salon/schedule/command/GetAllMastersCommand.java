@@ -11,6 +11,7 @@ import ua.salon.schedule.services.UserService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.time.LocalDate;
 import java.util.List;
 
 /**Gets all masters list from DB through app service layer for displaying in PagesJSP.MASTER_LIST*/
@@ -30,6 +31,7 @@ public class GetAllMastersCommand implements ActionCommand {
         rootLogger.debug(mastersList);
         session.setAttribute("mastersList", mastersList);
         rootLogger.debug("Size of booking list: " + mastersList.size());
+        request.setAttribute("today", LocalDate.now());
         return PagesJSP.BOOKING_LIST;
     }
 

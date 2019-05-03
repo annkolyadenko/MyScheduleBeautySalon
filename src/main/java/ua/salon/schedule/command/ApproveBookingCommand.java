@@ -57,6 +57,7 @@ public class ApproveBookingCommand implements ActionCommand {
         session.removeAttribute("chosenMaster");
         session.removeAttribute("bookDate");
         session.removeAttribute("bookTime");
+        session.removeAttribute("mastersList");
         return PagesJSP.BOOKING_APPROVED;
     }
 }

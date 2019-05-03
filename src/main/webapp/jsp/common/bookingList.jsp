@@ -28,7 +28,7 @@
             <ctg:if-user role="administrator">
                 <form action="controller" method="POST">
                     <label for="selectAdmin">Please, select master</label>
-                    <select id="selectAdmin" name="masterId">
+                    <select class="form-control" id="selectAdmin" name="masterId">
                         <option value="">Choose...</option>
                         <c:forEach var="master" items="${mastersList}" varStatus="status">
                             <c:choose>
@@ -43,7 +43,8 @@
                     </select>
                     <p>
                         <label for="dateAdmin">Select your date</label>
-                        <input type="date" id="dateAdmin" name="chosenDate" value="">
+                        <input class="form-control" type="date" id="dateAdmin" name="chosenDate" value=""
+                               min="${today}">
                     </p>
                     <p>
                         <button type="submit" name="command" value="GET_BOOKINGS_BY_MASTER_AND_DATE">Submit</button>
@@ -54,7 +55,7 @@
                 <form action="controller" method="POST">
                     <p>
                         <label for="dateMaster">Select your date</label>
-                        <input type="date" id="dateMaster" name="chosenDate" value="">
+                        <input class="form-control" type="date" id="dateMaster" name="chosenDate" value="">
                     </p>
                     <p>
                         <button type="submit" name="command" value="GET_BOOKINGS_BY_MASTER_AND_DATE">Submit</button>
@@ -64,7 +65,7 @@
             <ctg:if-user role="client">
                 <form action="controller" method="POST">
                     <label for="selectClient">Please, select master</label>
-                    <select id="selectClient" name="masterId">
+                    <select class="form-control" id="selectClient" name="masterId">
                         <option value="">Choose...</option>
                         <c:forEach var="master" items="${mastersList}" varStatus="status">
                             <c:choose>
@@ -79,14 +80,14 @@
                     </select>
                     <p>
                         <label for="dateClient">Select your date</label>
-                        <input type="date" id="dateClient" name="chosenDate" value="">
+                        <input class="form-control" type="date" id="dateClient" name="chosenDate" value=""
+                               min="${today}">
                     </p>
                     <p>
                         <button type="submit" name="command" value="GET_BOOKINGS_BY_MASTER_AND_DATE">Submit</button>
                     </p>
                 </form>
             </ctg:if-user>
-
         </div>
         <div class="col-lg-6 col-sm-6 ">
             <c:if test="${requestScope.bookings!=null}">
@@ -118,10 +119,12 @@
                                 <c:choose>
                                     <c:when test="${requestScope.bookings[i]!=null}">
                                         <ctg:if-user role="administrator">
-                                            ${requestScope.bookings[i].client.name}
+                                            ${requestScope.bookings[i].client.name},
+                                            tel: ${requestScope.bookings[i].client.phone}
                                         </ctg:if-user>
                                         <ctg:if-user role="master">
-                                            ${requestScope.bookings[i].client.name}
+                                            ${requestScope.bookings[i].client.name},
+                                            tel: ${requestScope.bookings[i].client.phone}
                                         </ctg:if-user>
                                         <ctg:if-user role="client">
                                             Booked
@@ -139,8 +142,9 @@
                                                 <input type="hidden" name="bookingChosenDate"
                                                        value="${requestScope.date}">
                                                 <input type="hidden" name="bookingChosenTime" value="${i+8}:00">
-                                                <button class="btn btn-dark btn-sm btn-block" type="submit" name="command"
-                                                        value="ADD_BOOKING">Make booking</button>
+                                                <button class="btn btn-dark btn-sm btn-block" type="submit"
+                                                        name="command" value="ADD_BOOKING">Make booking
+                                                </button>
                                             </form>
                                         </ctg:if-user>
                                     </c:when>
