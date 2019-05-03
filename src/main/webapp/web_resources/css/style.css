@@ -4,18 +4,17 @@ body{
     color: #545353;
     background: #fdfcfb;
     font-weight: normal;
+    height: 100%;
+    padding-bottom: 80px;
 }
-
 img{
     max-width: 100%;
     height: auto;
 }
-
 img.beauty3{
-    width: 50px;!important;
-    height: 50px;!important;
+    width: 50px !important;
+    height: 50px !important;
 }
-
 .navbar{
     box-shadow: 0 0 5px rgba(0, 0, 0, .19);
     font-size: 20px;
@@ -27,20 +26,16 @@ img.beauty3{
     /*color: #fdfcfb;*/
     color: #d42819;
 }
-
 .nav > li.active > a.nav-link{
     border-bottom: 2px solid #d42819;
 }
-
 .nav .nav-item > a:hover{
     border-bottom: 2px solid #d42819;
 }
-
 @media only screen and (max-width: 992px){
     .nav > li.active > a.nav-link {
         border-bottom: 0;
     }
-
     .nav .nav-item > a:hover{
         border-bottom: 0;
     }
@@ -50,8 +45,33 @@ img.beauty3{
     text-align: center;
     color: #545353;
 }
-footer hr{
+/*footer hr{
+    border-color: #545353;
+}*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
     border-color: #545353;
 }
+/*need 2 be done: 4 button padding-bottom!!!*/
+
+/*table {
+    padding-bottom: 1px;!important;
+    vertical-align: bottom;!important;
+}
+.table {
+    padding-bottom: 1px;!important;
+    vertical-align: bottom;!important;
+}
+button {
+    margin-bottom: 1px;!important;
+}
+.btn {
+    margin-bottom: 1px;!important;
+}*/
+
+
 
 

@@ -54,6 +54,9 @@ public class ApproveBookingCommand implements ActionCommand {
         booking.setTimeSlotEnd(timeSlotEnd);
         rootLogger.debug(booking);
         bookingService.addBooking(booking);
+        session.removeAttribute("chosenMaster");
+        session.removeAttribute("bookDate");
+        session.removeAttribute("bookTime");
         return PagesJSP.BOOKING_APPROVED;
     }
 }

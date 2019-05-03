@@ -8,7 +8,9 @@
 <c:import url="/jsp/dependencies.jsp"/>
 <body>
 <c:import url="/jsp/common/navigation.jsp"></c:import>
-<h1>Welcome on board!</h1>
+<div class="container" style="height: 100%">
+    <h1>Welcome on board!</h1>
+</div>
 <%--<form name="loginForm" method="POST" action="controller">
     <input type="hidden" name="command" value="login"/>
     Login:<br/>

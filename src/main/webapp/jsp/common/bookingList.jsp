@@ -8,7 +8,7 @@
 </head>
 <body>
 <c:import url="/jsp/common/navigation.jsp"></c:import>
-<div class="container" style="height: 100%">
+<div class="container">
     <div class="row">
         <div class="col-lg-6 col-sm-6 ">
             <br>
@@ -52,20 +52,6 @@
             </ctg:if-user>
             <ctg:if-user role="master">
                 <form action="controller" method="POST">
-                        <%--<label for="select">Select your master</label>
-                        <select id="select" name="masterId">
-                            <option value="">Choose...</option>
-                            <c:forEach var="master" items="${mastersList}" varStatus="status">
-                                <c:choose>
-                                    <c:when test="${master!=null}">
-                                        <option value="${master.id}">${master.name}</option>
-                                    </c:when>
-                                    <c:when test="${master==null}">
-                                        No available
-                                    </c:when>
-                                </c:choose>
-                            </c:forEach>
-                        </select>--%>
                     <p>
                         <label for="dateMaster">Select your date</label>
                         <input type="date" id="dateMaster" name="chosenDate" value="">
@@ -116,7 +102,7 @@
                     <h5>Phone number: ${requestScope.masterPhone}</h5>
                 </ctg:if-user>
                 <h5>Bookings for: ${requestScope.date}</h5>
-                <table class="table table-hover table-bordered text-center">
+                <table class="table table-sm table-hover table-bordered text-center">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">Time-slot</th>
@@ -153,9 +139,8 @@
                                                 <input type="hidden" name="bookingChosenDate"
                                                        value="${requestScope.date}">
                                                 <input type="hidden" name="bookingChosenTime" value="${i+8}:00">
-                                                <button type="submit" name="command"
-                                                        value="ADD_BOOKING">Make booking
-                                                </button>
+                                                <button class="btn btn-dark btn-sm btn-block" type="submit" name="command"
+                                                        value="ADD_BOOKING">Make booking</button>
                                             </form>
                                         </ctg:if-user>
                                     </c:when>
