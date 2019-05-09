@@ -1,0 +1,61 @@
+2019-05-03 21:47:56,549 DEBUG u.s.s.s.Sender [main] Mail Properties() constructor successfully initialized
+2019-05-03 21:47:56,973 DEBUG u.s.s.s.Sender [main] Mail was created
+2019-05-03 21:47:57,641 WARN u.s.s.s.Sender [main] MessagingException: 
+javax.mail.AuthenticationFailedException: failed to connect, no password specified?
+	at javax.mail.Service.connect(Service.java:329) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at ua.salon.schedule.ssl.Sender.send(Sender.java:46) [classes/:?]
+	at ua.salon.schedule.ssl.MailClient.main(MailClient.java:7) [classes/:?]
+2019-05-03 21:51:32,455 DEBUG u.s.s.s.Sender [main] Mail Properties() constructor successfully initialized
+2019-05-03 21:51:32,519 DEBUG u.s.s.s.Sender [main] Mail was created
+2019-05-03 21:51:32,623 WARN u.s.s.s.Sender [main] MessagingException: 
+javax.mail.AuthenticationFailedException: failed to connect, no password specified?
+	at javax.mail.Service.connect(Service.java:329) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at ua.salon.schedule.ssl.Sender.send(Sender.java:46) [classes/:?]
+	at ua.salon.schedule.ssl.MailClient.main(MailClient.java:7) [classes/:?]
+2019-05-03 21:52:24,203 DEBUG u.s.s.s.Sender [main] Mail Properties() constructor successfully initialized
+2019-05-03 21:52:24,259 DEBUG u.s.s.s.Sender [main] Mail was created
+2019-05-03 21:52:24,351 WARN u.s.s.s.Sender [main] MessagingException: 
+javax.mail.AuthenticationFailedException: failed to connect, no password specified?
+	at javax.mail.Service.connect(Service.java:329) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at ua.salon.schedule.ssl.Sender.send(Sender.java:46) [classes/:?]
+	at ua.salon.schedule.ssl.MailClient.main(MailClient.java:7) [classes/:?]
+2019-05-03 21:54:15,085 DEBUG u.s.s.s.Sender [main] Mail Properties() constructor successfully initialized
+2019-05-03 21:54:15,137 DEBUG u.s.s.s.Sender [main] Mail was created
+2019-05-03 21:54:15,265 WARN u.s.s.s.Sender [main] MessagingException: 
+javax.mail.AuthenticationFailedException: failed to connect, no password specified?
+	at javax.mail.Service.connect(Service.java:329) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at ua.salon.schedule.ssl.Sender.send(Sender.java:46) [classes/:?]
+	at ua.salon.schedule.ssl.MailClient.main(MailClient.java:7) [classes/:?]
+2019-05-03 22:00:04,645 DEBUG u.s.s.s.Sender [main] Mail was created
+2019-05-03 22:00:08,550 WARN u.s.s.s.Sender [main] MessagingException: 
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f12sm573535lfk.6 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:826) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:761) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:685) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:317) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:176) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Service.connect(Service.java:125) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send0(Transport.java:253) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at javax.mail.Transport.send(Transport.java:124) ~[mail-1.5.0-b01.jar:1.5.0-b01]
+	at ua.salon.schedule.ssl.Sender.send(Sender.java:50) [classes/:?]
+	at ua.salon.schedule.ssl.MailClient.main(MailClient.java:7) [classes/:?]
+2019-05-03 22:10:19,014 DEBUG u.s.s.s.Sender [main] Mail was created
+2019-05-03 22:10:22,947 DEBUG u.s.s.s.Sender [main] Mail successfully send to recipient
