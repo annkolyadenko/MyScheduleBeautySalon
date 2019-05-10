@@ -2,6 +2,7 @@ package ua.salon.schedule.dao.user;
 
 import org.apache.logging.log4j.*;
 import ua.salon.schedule.codec.MD5Util;
+import ua.salon.schedule.connection_utils.ConnectionUtil;
 import ua.salon.schedule.connection_utils.DatasourceJNDI;
 import ua.salon.schedule.model.user.User;
 import ua.salon.schedule.model.user.UserRole;
@@ -85,6 +86,7 @@ public class UserDAO{
         String role = null;
         try {
             connection = DatasourceJNDI.getConnection();
+            /*connection = ConnectionUtil.getConnection();*/
             rootlogger.debug("Connection is established");
             ps = connection.prepareStatement(FIND_USER_BY_ID);
             ps.setInt(1,idPk);

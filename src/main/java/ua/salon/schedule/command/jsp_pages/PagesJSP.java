@@ -1,4 +1,4 @@
-package ua.salon.schedule.controller;
+package ua.salon.schedule.command.jsp_pages;
 /**
 * Interface with String constants that provide path to JSP pages;
 */

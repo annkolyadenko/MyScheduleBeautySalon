@@ -3,7 +3,7 @@ package ua.salon.schedule.command;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ua.salon.schedule.command.factory.ActionCommand;
-import ua.salon.schedule.controller.PagesJSP;
+import ua.salon.schedule.command.jsp_pages.PagesJSP;
 import ua.salon.schedule.model.user.User;
 import ua.salon.schedule.services.service_factory.ServiceFactory;
 import ua.salon.schedule.services.UserService;

@@ -12,7 +12,7 @@
     </resource-ref>
     <servlet>
         <servlet-name>Controller</servlet-name>
-        <servlet-class>ua.salon.schedule.servlet.Controller</servlet-class>
+        <servlet-class>ua.salon.schedule.controller.servlet.Controller</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <!-- mapping -->

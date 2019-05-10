@@ -143,8 +143,7 @@
                                                        value="${requestScope.date}">
                                                 <input type="hidden" name="bookingChosenTime" value="${i+8}:00">
                                                 <button class="btn btn-dark btn-sm btn-block" type="submit"
-                                                        name="command"
-                                                        value="ADD_BOOKING">Make booking
+                                                        name="command" value="ADD_BOOKING">Make booking
                                                 </button>
                                             </form>
                                         </ctg:if-user>

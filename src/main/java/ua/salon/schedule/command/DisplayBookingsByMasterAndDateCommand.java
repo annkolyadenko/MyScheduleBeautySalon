@@ -3,7 +3,7 @@ package ua.salon.schedule.command;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ua.salon.schedule.command.factory.ActionCommand;
-import ua.salon.schedule.controller.PagesJSP;
+import ua.salon.schedule.command.jsp_pages.PagesJSP;
 import ua.salon.schedule.model.booking.Booking;
 import ua.salon.schedule.model.user.User;
 import ua.salon.schedule.model.user.UserRole;
@@ -14,8 +14,6 @@ import ua.salon.schedule.services.UserService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,6 +55,7 @@ public class DisplayBookingsByMasterAndDateCommand implements ActionCommand {
         request.setAttribute("masterName", masterName);
         request.setAttribute("masterPhone", masterPhone);
         request.setAttribute("master", master);
+
         request.setAttribute("bookings", getScheduleFormedBookingList(bookingList));
         rootLogger.debug("Size of booking list: " + bookingList.size());
         rootLogger.debug("redirecting from DisplayBookingsByMasterAndDateCommand.class to PagesJSP.BOOKING_TABLE");
@@ -64,10 +63,10 @@ public class DisplayBookingsByMasterAndDateCommand implements ActionCommand {
     }
 
     private ArrayList<Booking> getScheduleFormedBookingList(List<Booking> bookingList) {
-        ArrayList<Booking> bookings = new ArrayList<>(9);
-        for (int i = 0, j = 0; i < 9; i++) {
+        ArrayList<Booking> bookings = new ArrayList<>(10);
+        for (int i = 0, j = 0; i < 10; i++) {
             rootLogger.debug(i);
-            if (j != bookingList.size() && bookingList.get(j).getTime().equals((i + 8))) {
+            if (j < bookingList.size() && bookingList.get(j).getTime().equals((i + 8))) {
                 System.out.println("getTime: " + bookingList.get(j).getTime());
                 bookings.add(bookingList.get(j++));
                 System.out.println("Added "+j);

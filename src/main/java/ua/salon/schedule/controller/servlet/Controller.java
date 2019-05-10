@@ -1,9 +1,11 @@
-package ua.salon.schedule.servlet;
+package ua.salon.schedule.controller.servlet;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ua.salon.schedule.command.GetAllBookingsByDayCommand;
 import ua.salon.schedule.command.factory.ActionCommand;
 import ua.salon.schedule.command.factory.ActionFactory;
+import ua.salon.schedule.scheduled_executor_util.ScheduledGetAllBookingsCommandInvoker;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +13,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.time.LocalDate;
+
 /**
  * Main controller (@WebServlet) that dispatches request to appropriate command
  * */
@@ -23,6 +27,12 @@ public class Controller extends HttpServlet {
     @Override
     public void init() {
         rootlogger.info("Servlet successfully initialized");
+        /*ScheduledGetAllBookingsCommandInvoker.threadInvoke();*/
+        /*GetAllBookingsByDayCommand.invokeDAO(LocalDate.now().toString());*/
+        GetAllBookingsByDayCommand command = new GetAllBookingsByDayCommand();
+        command.invokeDAO(LocalDate.now().toString());
+        rootlogger.info("ScheduledGetAllBookingsCommandInvoker.threadInvoke() method successfully initialized");
+
     }
 
     @Override

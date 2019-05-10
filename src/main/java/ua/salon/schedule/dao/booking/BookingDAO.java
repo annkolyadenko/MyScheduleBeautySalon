@@ -1,6 +1,7 @@
 package ua.salon.schedule.dao.booking;
 
 import org.apache.logging.log4j.*;
+import ua.salon.schedule.connection_utils.ConnectionUtil;
 import ua.salon.schedule.connection_utils.DatasourceJNDI;
 import ua.salon.schedule.dao.TimeConverter;
 import ua.salon.schedule.dao.user.UserDAO;
@@ -21,6 +22,7 @@ public class BookingDAO {
     private static final String ADD_BOOKING = "INSERT INTO booking (booking_master_id, booking_client_id, schedule_slot_start, schedule_slot_end) VALUES (?,?,?,?)";
     private static final String FIND_BOOKING_BY_MASTER_ID = "SELECT * FROM booking WHERE booking_master_id = ?";
     private static final String FIND_BOOKING_BY_MASTER_ID_AND_DATE = "SELECT * FROM booking WHERE booking_master_id = ? AND DATE(schedule_slot_start) = ? ORDER BY schedule_slot_start ASC";
+    private static final String FIND_BOOKING_BY_DATE = "SELECT * FROM booking WHERE DATE(schedule_slot_start) = ? ORDER BY schedule_slot_start ASC";
     private static final String FIND_BOOKING_BY_ID = "SELECT * FROM booking WHERE booking_id = ?";
 
     public BookingDAO() {
@@ -83,6 +85,56 @@ public class BookingDAO {
                 booking.setClient(client);
                 booking.setTimeSlotStart(timeSlotStart);
                 booking.setTimeSlotEnd(timeSlotEnd);
+                bookingList.add(booking);
+            }
+        } catch (SQLException e) {
+            rootLogger.warn("SQLException at getBookingsByMasterID()", e);
+        } finally {
+            /*try {
+                DatasourceJNDI.closeConnection(connection, ps, resultSet);
+            } catch (ConnectionNotClosedException e) {
+                e.printStackTrace();
+            }*/
+        }
+        return bookingList;
+    }
+
+    public List<Booking> getAllBookingsByDate(String date) /*throws ConnectionNotOpenedException*/ {
+        PreparedStatement ps = null;
+        ResultSet resultSet = null;
+        UserDAO userDao = new UserDAO();
+        int bookingId = 0;
+        int clientId = 0;
+        int masterId = 0;
+        User master = null;
+        User client = null;
+        LocalDateTime timeSlotStart = null;
+        LocalDateTime timeSlotEnd = null;
+        List<Booking> bookingList = new ArrayList<>();
+        try {
+            /*connection = ConnectionUtil.getConnection();*/
+            connection = DatasourceJNDI.getConnection();
+            ps = connection.prepareStatement(FIND_BOOKING_BY_DATE);
+            ps.setString(1, date);
+            ResultSet rs = ps.executeQuery();
+            rootLogger.debug("ResultSet in getAllBookingsByMasterIdAndDate() method executed");
+            while (rs.next()) {
+                Booking booking = new Booking();
+                bookingId = rs.getInt("booking_id");
+                clientId = rs.getInt("booking_client_id");
+                masterId = rs.getInt("booking_master_id");
+                client = userDao.findUserById(clientId);
+                master = userDao.findUserById(masterId);
+                Timestamp mySqlStart = rs.getTimestamp("schedule_slot_start");
+                Timestamp mySqlEnd = rs.getTimestamp("schedule_slot_end");
+                timeSlotStart = mySqlStart.toLocalDateTime();
+                timeSlotEnd = mySqlEnd.toLocalDateTime();
+                booking.setBookingId(bookingId);
+                booking.setMaster(master);
+                booking.setClient(client);
+                booking.setTimeSlotStart(timeSlotStart);
+                booking.setTimeSlotEnd(timeSlotEnd);
+                rootLogger.debug("Booking"+booking);
                 bookingList.add(booking);
             }
         } catch (SQLException e) {

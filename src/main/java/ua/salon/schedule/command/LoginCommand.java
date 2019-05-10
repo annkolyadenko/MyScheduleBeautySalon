@@ -2,7 +2,7 @@ package ua.salon.schedule.command;
 
 import org.apache.logging.log4j.*;
 import ua.salon.schedule.codec.MD5Util;
-import ua.salon.schedule.controller.PagesJSP;
+import ua.salon.schedule.command.jsp_pages.PagesJSP;
 import ua.salon.schedule.command.factory.ActionCommand;
 import ua.salon.schedule.model.user.User;
 import ua.salon.schedule.model.user.UserRole;

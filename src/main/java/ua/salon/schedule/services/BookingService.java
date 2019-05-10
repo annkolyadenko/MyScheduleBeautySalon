@@ -20,6 +20,10 @@ public class BookingService {
         return bookingDAO.getAllBookingsByMasterIdAndDate(masterId, date);
     }
 
+    public List<Booking> getAllBookingsByDate(String date) {
+        return bookingDAO.getAllBookingsByDate(date);
+    }
+
     public Booking getBookingById(int bookingId) {
         return bookingDAO.getBookingById(bookingId);
     }
