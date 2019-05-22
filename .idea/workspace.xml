@@ -9,133 +9,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb15509-7966-4279-a627-eee7406d04cf" name="Default" comment="scheduled thread implementation started">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/MailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/web_resources/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/web_resources/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/ActionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/ActionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/booking/BookingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/booking/BookingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/user/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/user/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/web_resources/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/web_resources/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/tempusdominus.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/eye.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/java1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/images/java2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/tempusdominus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/js/moment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/properties/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/codec/MD5Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/AddBookingCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/AddReviewCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ApproveBookingCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/DisplayReviewsByMasterCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditAboutInfoCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditMasterCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditPricesCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditServicesCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/GetAllMastersCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LocalizationCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LoginCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LogoutCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ReturnToHomePageCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/SendReviewProposalToEmailCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/SignUpCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/ActionCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/ActionFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/ConnectionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/DatasourceJNDI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/connection_exceptions/ConnectionNotClosedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/connection_exceptions/ConnectionNotOpenedException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/DAOTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/TimeConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/booking/BookingDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/review/ReviewDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/user/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/manager/ConfigurationManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/manager/MessageManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/ModelMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/Booking.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/BookingTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/BookingTableMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/BookingTableTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/review/Review.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/user/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/user/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/BookingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/ReviewService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/service_factory/ServiceFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/ssl/MailClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/ssl/Sender$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/ssl/Sender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/tags/BookingTableTag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/tags/UserRoleTag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/useful_utils/Formatter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/useful_utils/TimeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/log/application.log" afterDir="false" />
-    </list>
+    <list default="true" id="0fb15509-7966-4279-a627-eee7406d04cf" name="Default" comment="scheduled thread implementation started" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -803,7 +677,7 @@
       <workItem from="1557998104662" duration="2327000" />
       <workItem from="1558374673675" duration="19881000" />
       <workItem from="1558530320298" duration="434000" />
-      <workItem from="1558531131323" duration="404000" />
+      <workItem from="1558531131323" duration="956000" />
     </task>
     <task id="LOCAL-00001" summary="4commit">
       <created>1555334247875</created>
@@ -980,11 +854,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557511701708</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="scheduled thread implementation started">
+      <created>1558536498323</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1558536498323</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="863637000" />
+    <option name="totallyTimeSpent" value="864189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -996,7 +877,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50756305" side_tool="true" weight="0.13657056" />
       <window_info id="Designer" order="1" />
