@@ -85,8 +85,8 @@ public class UserDAO{
         User user = new User();
         String role = null;
         try {
-            connection = DatasourceJNDI.getConnection();
-            /*connection = ConnectionUtil.getConnection();*/
+            /*connection = DatasourceJNDI.getConnection();*/
+            connection = ConnectionUtil.getConnection();
             rootlogger.debug("Connection is established");
             ps = connection.prepareStatement(FIND_USER_BY_ID);
             ps.setInt(1,idPk);

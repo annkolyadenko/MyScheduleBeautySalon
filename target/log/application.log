@@ -106,3 +106,309 @@ javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not ac
 2019-05-10 18:09:56,447 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
 2019-05-10 18:09:56,451 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
 2019-05-10 18:09:56,455 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=51, master=Yura, client=Vanya, 2019-05-10 15:00 - 2019-05-10 16:00}
+2019-05-10 21:54:36,499 INFO u.s.s.c.ConnectionUtil [pool-2-thread-1] Connection with database established
+2019-05-10 21:54:37,031 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-10 21:54:37,035 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,099 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,149 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=54, master=YaStrigu, client=Vanya, 2019-05-10 08:00 - 2019-05-10 09:00}
+2019-05-10 21:54:37,149 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,151 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,154 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=49, master=Yura, client=Vanya, 2019-05-10 10:00 - 2019-05-10 11:00}
+2019-05-10 21:54:37,154 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,156 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,158 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=51, master=Yura, client=Vanya, 2019-05-10 15:00 - 2019-05-10 16:00}
+2019-05-10 21:54:37,159 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,161 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,163 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=53, master=Yura, client=Vanya, 2019-05-10 16:00 - 2019-05-10 17:00}
+2019-05-10 21:54:37,163 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,165 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:54:37,167 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=50, master=Yura, client=Vanya, 2019-05-10 17:00 - 2019-05-10 18:00}
+2019-05-10 21:59:34,698 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-10 21:59:34,699 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,701 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,702 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=54, master=YaStrigu, client=Vanya, 2019-05-10 08:00 - 2019-05-10 09:00}
+2019-05-10 21:59:34,703 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,704 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,707 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=49, master=Yura, client=Vanya, 2019-05-10 10:00 - 2019-05-10 11:00}
+2019-05-10 21:59:34,707 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,709 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,711 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=51, master=Yura, client=Vanya, 2019-05-10 15:00 - 2019-05-10 16:00}
+2019-05-10 21:59:34,711 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,713 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,714 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=53, master=Yura, client=Vanya, 2019-05-10 16:00 - 2019-05-10 17:00}
+2019-05-10 21:59:34,715 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,716 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 21:59:34,718 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=50, master=Yura, client=Vanya, 2019-05-10 17:00 - 2019-05-10 18:00}
+2019-05-10 22:04:34,698 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-10 22:04:34,698 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,700 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,701 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=54, master=YaStrigu, client=Vanya, 2019-05-10 08:00 - 2019-05-10 09:00}
+2019-05-10 22:04:34,701 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,703 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,705 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=49, master=Yura, client=Vanya, 2019-05-10 10:00 - 2019-05-10 11:00}
+2019-05-10 22:04:34,705 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,708 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,710 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=51, master=Yura, client=Vanya, 2019-05-10 15:00 - 2019-05-10 16:00}
+2019-05-10 22:04:34,710 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,712 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,713 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=53, master=Yura, client=Vanya, 2019-05-10 16:00 - 2019-05-10 17:00}
+2019-05-10 22:04:34,713 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,715 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:04:34,718 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=50, master=Yura, client=Vanya, 2019-05-10 17:00 - 2019-05-10 18:00}
+2019-05-10 22:09:34,698 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-10 22:09:34,699 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,700 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,702 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=54, master=YaStrigu, client=Vanya, 2019-05-10 08:00 - 2019-05-10 09:00}
+2019-05-10 22:09:34,702 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,704 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,706 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=49, master=Yura, client=Vanya, 2019-05-10 10:00 - 2019-05-10 11:00}
+2019-05-10 22:09:34,707 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,708 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,710 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=51, master=Yura, client=Vanya, 2019-05-10 15:00 - 2019-05-10 16:00}
+2019-05-10 22:09:34,710 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,712 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,714 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=53, master=Yura, client=Vanya, 2019-05-10 16:00 - 2019-05-10 17:00}
+2019-05-10 22:09:34,714 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,716 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:09:34,718 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=50, master=Yura, client=Vanya, 2019-05-10 17:00 - 2019-05-10 18:00}
+2019-05-10 22:21:01,960 INFO u.s.s.c.ConnectionUtil [pool-2-thread-1] Connection with database established
+2019-05-10 22:21:02,185 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-10 22:21:02,243 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,316 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,377 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=54, master=YaStrigu, client=Vanya, 2019-05-10 08:00 - 2019-05-10 09:00}
+2019-05-10 22:21:02,378 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,379 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,381 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=49, master=Yura, client=Vanya, 2019-05-10 10:00 - 2019-05-10 11:00}
+2019-05-10 22:21:02,381 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,383 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,384 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=51, master=Yura, client=Vanya, 2019-05-10 15:00 - 2019-05-10 16:00}
+2019-05-10 22:21:02,385 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,386 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,388 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=53, master=Yura, client=Vanya, 2019-05-10 16:00 - 2019-05-10 17:00}
+2019-05-10 22:21:02,389 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,391 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-10 22:21:02,393 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=50, master=Yura, client=Vanya, 2019-05-10 17:00 - 2019-05-10 18:00}
+2019-05-21 20:40:49,391 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-21 20:40:49,615 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-21 20:40:49,831 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:40:49,895 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:40:50,025 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=55, master=Yura, client=Vanya, 2019-05-21 17:00 - 2019-05-21 18:00}
+2019-05-21 20:41:30,642 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-21 20:41:30,794 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-21 20:41:30,854 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:41:30,886 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:41:30,922 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=55, master=Yura, client=Vanya, 2019-05-21 17:00 - 2019-05-21 18:00}
+2019-05-21 20:45:10,134 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-21 20:45:10,190 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-21 20:45:10,440 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:45:10,576 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:45:10,648 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=55, master=Yura, client=Vanya, 2019-05-21 17:00 - 2019-05-21 18:00}
+2019-05-21 20:45:10,672 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-21T20:43:00.660+03:00[Europe/Kiev]
+2019-05-21 20:45:30,071 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-21 20:45:30,363 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-21 20:45:30,371 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:45:30,375 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-21 20:45:30,399 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=55, master=Yura, client=Vanya, 2019-05-21 17:00 - 2019-05-21 18:00}
+2019-05-21 20:45:30,411 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-21T20:46:00.411+03:00[Europe/Kiev]
+2019-05-22 07:15:45,521 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 07:15:45,652 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 07:15:45,819 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:15:45,875 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:15:45,933 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 07:15:45,934 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:15:45,936 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:15:45,939 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 07:15:45,940 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:15:45,942 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:15:45,945 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 07:15:45,998 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T07:15:00.997+03:00[Europe/Kiev]
+2019-05-22 07:16:32,450 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 07:16:32,540 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 07:16:32,546 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:16:32,551 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:16:32,576 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 07:16:32,577 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:16:32,578 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:16:32,583 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 07:16:32,583 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:16:32,586 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:16:32,589 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 07:16:32,598 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T07:18:00.597+03:00[Europe/Kiev]
+2019-05-22 07:17:39,089 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 07:17:39,182 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 07:17:39,188 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:17:39,196 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:17:39,220 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 07:17:39,221 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:17:39,223 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:17:39,227 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 07:17:39,227 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:17:39,230 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:17:39,233 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 07:17:39,241 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T04:19:00.240+03:00[Europe/Kiev]
+2019-05-22 07:58:12,569 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 07:58:12,663 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 07:58:12,668 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:58:12,674 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:58:12,699 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 07:58:12,700 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:58:12,703 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:58:12,706 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 07:58:12,707 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:58:12,709 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:58:12,713 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 07:58:12,720 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T07:59:00.720+03:00[Europe/Kiev]
+2019-05-22 07:59:38,532 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 07:59:38,618 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 07:59:38,624 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:59:38,632 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:59:38,658 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 07:59:38,658 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:59:38,661 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:59:38,682 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 07:59:38,683 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:59:38,685 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 07:59:38,689 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 07:59:38,697 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T08:01:00.696+03:00[Europe/Kiev]
+2019-05-22 08:06:31,982 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 08:06:32,077 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 08:06:32,082 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:32,087 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:32,113 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 08:06:32,113 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:32,116 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:32,120 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 08:06:32,121 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:32,123 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:32,127 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 08:06:32,135 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T08:01:00.134+03:00[Europe/Kiev]
+2019-05-22 08:06:50,934 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 08:06:51,030 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 08:06:51,036 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:51,041 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:51,070 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 08:06:51,071 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:51,074 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:51,079 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 08:06:51,080 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:51,086 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:06:51,089 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 08:06:51,097 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T08:08:00.096+03:00[Europe/Kiev]
+2019-05-22 08:14:39,354 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 08:14:39,467 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 08:14:39,473 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:14:39,481 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:14:39,505 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 08:14:39,506 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:14:39,509 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:14:39,512 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 08:14:39,513 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:14:39,516 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 08:14:39,519 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 08:14:39,930 DEBUG u.s.s.s.ScheduledGetAllBookingsCommandInvoker [main] Next run of executor2019-05-22T08:16:00.929+03:00[Europe/Kiev]
+2019-05-22 08:16:00,944 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 08:16:00,945 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 08:16:00,947 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 08:16:00,950 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 08:16:00,950 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 08:16:00,952 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 08:16:00,955 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 08:16:00,955 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 08:16:00,957 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 08:16:00,959 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 10:44:09,092 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 10:44:09,612 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 10:44:09,652 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:44:09,704 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:44:09,885 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 10:44:09,885 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:44:09,885 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:44:09,889 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 10:44:09,889 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:44:09,893 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:44:09,893 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 10:44:09,937 DEBUG u.s.s.s.ScheduledExecutor [main] Next run of executor2019-05-22T08:16:00.937+03:00[Europe/Kiev]
+2019-05-22 10:44:09,941 WARN u.s.s.s.ScheduledExecutor [main] Exception occured in threadInvoke()
+java.lang.NullPointerException: null
+	at ua.salon.schedule.singleton.ScheduledExecutor.threadInvoke(ScheduledExecutor.java:44) [classes/:?]
+	at ua.salon.schedule.Main.main(Main.java:17) [classes/:?]
+2019-05-22 10:46:38,589 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 10:46:38,761 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 10:46:38,765 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:46:38,835 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:46:38,859 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 10:46:38,859 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:46:38,859 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:46:38,863 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 10:46:38,863 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:46:38,867 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 10:46:38,871 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 10:46:39,120 DEBUG u.s.s.s.ScheduledExecutor [main] Next run of executor2019-05-22T10:48:00.120+03:00[Europe/Kiev]
+2019-05-22 10:48:00,137 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 10:48:00,137 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 10:48:00,137 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 10:48:00,141 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 10:48:00,141 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 10:48:00,145 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 10:48:00,149 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 10:48:00,149 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 10:48:00,153 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 10:48:00,157 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 11:39:30,383 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 11:39:30,937 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 11:39:30,944 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:39:31,167 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:39:31,484 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 11:39:31,484 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:39:31,486 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:39:31,542 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 11:39:31,543 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:39:31,545 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:39:31,547 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 11:39:31,566 DEBUG u.s.s.s.ScheduledExecutor [main] Next run of executor2019-05-22T11:39:00.566+03:00[Europe/Kiev]
+2019-05-22 11:39:31,571 DEBUG u.s.s.s.ScheduledExecutor [main] Next run of executor2019-05-22T11:39:00.570+03:00[Europe/Kiev]
+2019-05-22 11:40:03,761 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 11:40:04,012 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 11:40:04,017 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:40:04,089 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:40:04,111 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 11:40:04,112 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:40:04,114 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:40:04,117 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 11:40:04,118 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:40:04,120 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:40:04,124 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 11:40:04,138 DEBUG u.s.s.s.ScheduledExecutor [main] Next run of executor2019-05-22T11:41:00.138+03:00[Europe/Kiev]
+2019-05-22 11:40:04,148 DEBUG u.s.s.s.ScheduledExecutor [main] Next run of executor2019-05-22T11:41:00.148+03:00[Europe/Kiev]
+2019-05-22 11:41:00,151 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 11:41:00,151 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,153 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,155 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 11:41:00,156 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,157 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,159 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 11:41:00,160 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,161 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,163 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 11:41:00,165 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 11:41:00,166 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,167 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,169 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 11:41:00,169 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,171 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,173 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 11:41:00,173 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,174 DEBUG u.s.s.d.u.UserDAO [pool-2-thread-1] Connection is established
+2019-05-22 11:41:00,176 DEBUG u.s.s.d.b.BookingDAO [pool-2-thread-1] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 11:42:51,142 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-05-22 11:42:51,355 DEBUG u.s.s.d.b.BookingDAO [main] ResultSet in getAllBookingsByMasterIdAndDate() method executed
+2019-05-22 11:42:51,362 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:42:51,376 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:42:51,401 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=56, master=Yura, client=Vanya, 2019-05-22 08:00 - 2019-05-22 09:00}
+2019-05-22 11:42:51,403 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:42:51,405 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:42:51,408 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=57, master=Yura, client=Vanya, 2019-05-22 12:00 - 2019-05-22 13:00}
+2019-05-22 11:42:51,409 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:42:51,413 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-05-22 11:42:51,417 DEBUG u.s.s.d.b.BookingDAO [main] BookingBooking{bookingId=58, master=Yura, client=Vanya, 2019-05-22 17:00 - 2019-05-22 18:00}
+2019-05-22 11:42:51,439 DEBUG u.s.s.s.ScheduledExecutor [main] Next run of executor2019-05-22T11:44:00.438+03:00[Europe/Kiev]

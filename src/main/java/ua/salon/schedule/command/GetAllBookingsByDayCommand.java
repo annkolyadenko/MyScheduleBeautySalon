@@ -8,7 +8,6 @@ import ua.salon.schedule.model.booking.Booking;
 import ua.salon.schedule.services.BookingService;
 import ua.salon.schedule.services.service_factory.ServiceFactory;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class GetAllBookingsByDayCommand implements Observable {
@@ -22,7 +21,7 @@ public class GetAllBookingsByDayCommand implements Observable {
     public List<Booking> invokeDAO(String date) {
         List<Booking> result = bookingService.getAllBookingsByDate(date);
         for (Booking booking : result) {
-            System.out.println(booking);
+            System.out.println(booking.getClient().getEmail());
         }
         return result;
     }

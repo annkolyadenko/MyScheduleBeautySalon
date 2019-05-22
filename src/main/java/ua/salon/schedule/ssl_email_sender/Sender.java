@@ -1,4 +1,4 @@
-package ua.salon.schedule.ssl;
+package ua.salon.schedule.ssl_email_sender;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -6,9 +6,11 @@ import org.apache.logging.log4j.Logger;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.Observable;
+import java.util.Observer;
 import java.util.Properties;
 
-public class Sender {
+public class Sender implements Observer {
 
     private static final Logger rootLogger = LogManager.getRootLogger();
 
@@ -38,20 +40,20 @@ public class Sender {
         try {
             Message message = new MimeMessage(session);
             rootLogger.debug("Mail was created");
-            //от кого
             message.setFrom(new InternetAddress(username));
-            //кому
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
-            //тема сообщения
             message.setSubject(subject);
-            //текст
             message.setText(text);
-            //отправляем сообщение
             Transport.send(message);
             rootLogger.debug("Mail successfully send to recipient");
 
         } catch (MessagingException e) {
             rootLogger.warn("MessagingException: ", e);
         }
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+
     }
 }

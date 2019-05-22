@@ -6065,7 +6065,7 @@
         // so they're executed at the same time to save the second computation.
         function computeStyleTests() {
 
-            // This is a singleton, we need to execute it only once
+            // This is a singleton_executor, we need to execute it only once
             if ( !div ) {
                 return;
             }

@@ -61,16 +61,16 @@ public class BookingDAO {
         int bookingId = 0;
         int clientId = 0;
         User master = null;
-        User client = null;
-        LocalDateTime timeSlotStart = null;
-        LocalDateTime timeSlotEnd = null;
-        List<Booking> bookingList = new ArrayList<>();
-        try {
-            connection = DatasourceJNDI.getConnection();
-            ps = connection.prepareStatement(FIND_BOOKING_BY_MASTER_ID);
-            ps.setInt(1, masterId);
-            ResultSet rs = ps.executeQuery();
-            while (rs.next()) {
+                User client = null;
+                LocalDateTime timeSlotStart = null;
+                LocalDateTime timeSlotEnd = null;
+                List<Booking> bookingList = new ArrayList<>();
+                try {
+                    connection = DatasourceJNDI.getConnection();
+                    ps = connection.prepareStatement(FIND_BOOKING_BY_MASTER_ID);
+                    ps.setInt(1, masterId);
+                    ResultSet rs = ps.executeQuery();
+                    while (rs.next()) {
                 Booking booking = new Booking();
                 bookingId = rs.getInt("booking_id");
                 clientId = rs.getInt("booking_client_id");
@@ -112,8 +112,8 @@ public class BookingDAO {
         LocalDateTime timeSlotEnd = null;
         List<Booking> bookingList = new ArrayList<>();
         try {
-            /*connection = ConnectionUtil.getConnection();*/
-            connection = DatasourceJNDI.getConnection();
+            connection = ConnectionUtil.getConnection();
+            /*connection = DatasourceJNDI.getConnection();*/
             ps = connection.prepareStatement(FIND_BOOKING_BY_DATE);
             ps.setString(1, date);
             ResultSet rs = ps.executeQuery();

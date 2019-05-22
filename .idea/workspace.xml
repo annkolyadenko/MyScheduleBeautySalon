@@ -9,60 +9,131 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb15509-7966-4279-a627-eee7406d04cf" name="Default" comment="backup is always a good idea!">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java" afterDir="false" />
+    <list default="true" id="0fb15509-7966-4279-a627-eee7406d04cf" name="Default" comment="scheduled thread implementation started">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/AddBookingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/AddBookingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/ApproveBookingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/ApproveBookingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllMastersCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllMastersCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LoginCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LogoutCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/ReturnToHomePageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/ReturnToHomePageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/PagesJSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/jsp_pages/PagesJSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/SessionRequestContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/SessionRequestContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/DAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/DAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/services/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/services/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/servlet/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/servlet/ServletContextListenerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/AddBookingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/AddBookingCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/AddMasterCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/ApproveBookingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/ApproveBookingCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/MailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/web_resources/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/web_resources/js/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/EmptyCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/GetAllMastersCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/GetAllMastersCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/LoginCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/LoginCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/LogoutCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/LogoutCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/ReturnToHomePageCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/ReturnToHomePageCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/SignUpCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/SignUpCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/ActionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/ActionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/controller/PagesJSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/controller/SessionRequestContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/DAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/DAOTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/booking/BookingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/booking/BookingDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/user/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/dao/user/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/services/BookingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/services/BookingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/servlet/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/jsp/common/bookingList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/jsp/common/bookingList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/AddBookingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/AddBookingCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ApproveBookingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ApproveBookingCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/GetAllMastersCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/GetAllMastersCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LoginCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LoginCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LogoutCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LogoutCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ReturnToHomePageCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ReturnToHomePageCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/controller/PagesJSP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/controller/SessionRequestContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/DAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/DAOTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/booking/BookingDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/booking/BookingDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/user/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/user/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/BookingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/BookingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/servlet/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/web_resources/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/web_resources/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/bootstrap/tempusdominus.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/beauty5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/eye.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/java1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/images/java2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/bootstrap/tempusdominus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/js/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/open_sans_font/OpenSans-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/codec/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/AddBookingCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/AddReviewCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ApproveBookingCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/DisplayReviewsByMasterCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditAboutInfoCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditMasterCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditPricesCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/EditServicesCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/GetAllMastersCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LocalizationCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LoginCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/LogoutCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/ReturnToHomePageCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/SendReviewProposalToEmailCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/SignUpCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/ActionCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/ActionFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/command/factory/CommandEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/ConnectionUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/DatasourceJNDI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/connection_exceptions/ConnectionNotClosedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/connection_utils/connection_exceptions/ConnectionNotOpenedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/DAOTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/TimeConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/booking/BookingDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/review/ReviewDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/dao/user/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/manager/ConfigurationManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/manager/MessageManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/ModelMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/Booking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/BookingTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/BookingTableMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/booking/BookingTableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/review/Review.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/user/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/model/user/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/BookingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/ReviewService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/services/service_factory/ServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/ssl/MailClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/ssl/Sender$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/ssl/Sender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/tags/BookingTableTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/tags/UserRoleTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/useful_utils/Formatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/salon/schedule/useful_utils/TimeUtil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/log/application.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -117,46 +188,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+            <state relative-caret-position="529">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -182,13 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/helful_utils/BookingTimeSplitter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/helpful_utils/BookingDateSplitter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/useful_utils/Formatter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/model/booking/Booking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/useful_utils/TimeAdder.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/dependencies.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/datetimepicker4.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/common/booking.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/common/firewell.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/useful_utils/TimeUtil.java" />
@@ -210,14 +260,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/SignUpCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LocalizationCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/EditMasterCommand.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/MailClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/Sender.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/bookings_thread/DailyBookingsUploaderThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/bookings_scheduled_executor_service/DailyBookingsUploaderThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/services/BookingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/AddBookingCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/bookings_scheduled_executor_service/SheduledBookingDAOInvoker.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/servlet/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/bookings_scheduled_executor_service/ScheduledBookingDAOInvoker.java" />
@@ -226,13 +274,22 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/SessionRequestContent.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/jsp_pages/PagesJSP.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/SheduledGetAllBookingsCommandInvoker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/DAOTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/executor/ScheduledGetAllBookingsCommandInvoker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton/ScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" />
       </list>
     </option>
   </component>
@@ -260,10 +317,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="210" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1378" />
-    <option name="height" value="735" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -279,6 +336,17 @@
             <path>
               <item name="MyScheduleBeautySalon" type="58d84e3e:PackageViewProjectNode" />
               <item name="MyScheduleBeautySalon" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="MyScheduleBeautySalon" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MyScheduleBeautySalon" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -324,15 +392,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="schedule" type="462c0819:PsiDirectoryNode" />
-              <item name="command" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyScheduleBeautySalon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyScheduleBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="schedule" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -342,27 +401,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="schedule" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyScheduleBeautySalon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyScheduleBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="schedule" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyScheduleBeautySalon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyScheduleBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="schedule" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="singleton_executor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyScheduleBeautySalon" type="b2602c69:ProjectViewProjectNode" />
@@ -373,18 +412,11 @@
             </path>
             <path>
               <item name="MyScheduleBeautySalon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="MyScheduleBeautySalon" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="MyScheduleBeautySalon" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="MyScheduleBeautySalon" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,14 +434,14 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552241510816" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../epam" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3505747" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -448,7 +480,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.salon.schedule.scheduled_executor_util.*" />
+          <option name="PATTERN" value="ua.salon.schedule.executor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -485,12 +517,26 @@
       </method>
     </configuration>
     <configuration name="MailClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ua.salon.schedule.ssl.MailClient" />
+      <option name="MAIN_CLASS_NAME" value="ua.salon.schedule.ssl_email_sender.MailClient" />
       <module name="MyScheduleBeautySalon" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.salon.schedule.ssl.*" />
+          <option name="PATTERN" value="ua.salon.schedule.ssl_email_sender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ua.salon.schedule.Main" />
+      <module name="MyScheduleBeautySalon" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.salon.schedule.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -660,96 +706,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bindex.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/jsp/bindex.jsp" />
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="MyScheduleBeautySalon:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_MyScheduleBeautySalon" />
-        <option name="HTTP_PORT" value="8084" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="61207" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="MyScheduleBeautySalon:war" />
-        </option>
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.BookingDAOInvoker" />
       <item itemvalue="Application.DAOTest" />
       <item itemvalue="Application.DAOTest (1)" />
       <item itemvalue="Application.MailClient" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Tomcat Server.Tomcat" />
-      <item itemvalue="Tomcat Server.bindex.jsp" />
-      <item itemvalue="Application.ScheduledBookingDAOInvoker" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.DAOTest (1)" />
-        <item itemvalue="Application.ScheduledBookingDAOInvoker" />
         <item itemvalue="Application.MailClient" />
         <item itemvalue="Application.DAOTest" />
-        <item itemvalue="Tomcat Server.bindex.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -827,7 +797,13 @@
       <workItem from="1556264680147" duration="36158000" />
       <workItem from="1556780290030" duration="14604000" />
       <workItem from="1556801346770" duration="1996000" />
-      <workItem from="1556864987455" duration="61245000" />
+      <workItem from="1556864987455" duration="65084000" />
+      <workItem from="1557686982242" duration="5000" />
+      <workItem from="1557821194394" duration="2358000" />
+      <workItem from="1557998104662" duration="2327000" />
+      <workItem from="1558374673675" duration="19881000" />
+      <workItem from="1558530320298" duration="434000" />
+      <workItem from="1558531131323" duration="404000" />
     </task>
     <task id="LOCAL-00001" summary="4commit">
       <created>1555334247875</created>
@@ -997,11 +973,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557320325522</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="scheduled thread implementation started">
+      <created>1557511701708</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557511701708</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="834389000" />
+    <option name="totallyTimeSpent" value="863637000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1014,7 +997,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.50756305" side_tool="true" weight="0.13657056" />
       <window_info id="Designer" order="1" />
@@ -1023,10 +1005,11 @@
       <window_info id="Favorites" order="4" sideWeight="0.50756305" side_tool="true" weight="0.13657056" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" sideWeight="0.50163937" weight="0.245827" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49243698" visible="true" weight="0.30332828" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49243698" visible="true" weight="0.25567323" />
+      <window_info anchor="bottom" id="Statistic" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32405892" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.3747954" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.3747954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1048,7 +1031,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Database" order="7" weight="0.1301059" />
+      <window_info anchor="right" id="Database" order="7" weight="0.1580938" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
@@ -1115,48 +1098,14 @@
     <MESSAGE value="reformat of project and some updates" />
     <MESSAGE value="some new features implemented" />
     <MESSAGE value="backup is always a good idea!" />
-    <option name="LAST_COMMIT_MESSAGE" value="backup is always a good idea!" />
+    <MESSAGE value="scheduled thread implementation started" />
+    <option name="LAST_COMMIT_MESSAGE" value="scheduled thread implementation started" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/connection_utils/connection_exceptions/ConnectionNotOpenedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/connection_utils/DatasourceJNDI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/connection_utils/ConnectionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="96" column="54" lean-forward="true" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/TimeSpanHolder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web_resources/images/beauty4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web_resources/images/beauty2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/web_resources/images/beauty5.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1173,7 +1122,7 @@
     <entry file="das://94b36145-5bf2-44de-96f4-2020ecc70d72/schema/beautysalon/table/booking">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true">
+          <filtering>
             <filter text="" />
           </filtering>
         </state>
@@ -1289,24 +1238,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/authorized/client/clientPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="20" selection-start-line="9" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/MailClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="121" selection-start-line="6" selection-start-column="121" selection-end-line="6" selection-end-column="121" />
         </state>
       </provider>
     </entry>
@@ -1327,39 +1262,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl/Sender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#961#1152#0" expanded="true" />
-            <element signature="e#1151#1152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/bookings_scheduled_executor_service/DailyBookingsUploaderThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/bookings_scheduled_executor_service/DailyBookingsUploaderThread.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/ApproveBookingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="32" column="76" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1394,21 +1301,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/BookingDAOInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="90" lean-forward="true" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/ServletContextListenerImpl.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/BookingDAOInvoker.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/ServletContextListenerImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/jsp_pages/PagesJSP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1430,13 +1324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/CommandEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/SendReviewProposalToEmailCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1451,20 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/DAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1472,56 +1345,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="87" column="56" lean-forward="true" selection-start-line="87" selection-start-column="56" selection-end-line="87" selection-end-column="56" />
+        <state relative-caret-position="796">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        <state relative-caret-position="102">
+          <caret line="6" column="121" selection-start-line="6" selection-start-column="121" selection-end-line="6" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/time/zone/ZoneRulesProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2604">
+          <caret line="271" column="18" selection-start-line="271" selection-start-column="18" selection-end-line="271" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://94b36145-5bf2-44de-96f4-2020ecc70d72/schema/beautysalon/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="77e3022e-3407-47d8-a8c3-7e565640e292">
+          <filtering />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/model/booking/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="125" column="30" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/CommandEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LoginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/executor/ScheduledGetAllBookingsCommandInvoker.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="24" column="148" lean-forward="true" selection-start-line="24" selection-start-column="148" selection-end-line="24" selection-end-column="148" />
+        <state relative-caret-position="-816">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="56" column="76" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
+        <state relative-caret-position="187">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+        <state relative-caret-position="529">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

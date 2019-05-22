@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<h>nulla dies sine linea</h>
 <%--<c:redirect url="jsp/common/login.jsp"/>--%>
 <jsp:forward page="jsp/common/login.jsp"/>
 </body>
