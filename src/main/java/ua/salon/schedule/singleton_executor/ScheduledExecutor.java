@@ -28,7 +28,7 @@ public enum ScheduledExecutor {
     }
     public void threadInvoke() {
         ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Europe/Kiev"));
-        ZonedDateTime nextRun = now.withHour(11).withMinute(45).withSecond(0);
+        ZonedDateTime nextRun = now.withHour(18).withMinute(17).withSecond(0);
         rootLogger.debug("Next run of executor" + nextRun);
         if(now.compareTo(nextRun) > 0){
             nextRun = nextRun.plusDays(1);

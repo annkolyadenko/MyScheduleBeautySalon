@@ -6,11 +6,9 @@ import org.apache.logging.log4j.Logger;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.util.Observable;
-import java.util.Observer;
 import java.util.Properties;
 
-public class Sender implements Observer {
+class Sender {
 
     private static final Logger rootLogger = LogManager.getRootLogger();
 
@@ -18,7 +16,7 @@ public class Sender implements Observer {
     private String password;
     private Properties props;
 
-    public Sender(String username, String password) {
+    Sender(String username, String password) {
         this.username = username;
         this.password = password;
 
@@ -30,7 +28,7 @@ public class Sender implements Observer {
         props.put("mail.smtp.port", "465");
     }
 
-    public void send(String subject, String text, String fromEmail, String toEmail){
+    void send(String subject, String text, String fromEmail, String toEmail){
         Session session = Session.getDefaultInstance(props, new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(username, password);
@@ -50,10 +48,5 @@ public class Sender implements Observer {
         } catch (MessagingException e) {
             rootLogger.warn("MessagingException: ", e);
         }
-    }
-
-    @Override
-    public void update(Observable o, Object arg) {
-
     }
 }

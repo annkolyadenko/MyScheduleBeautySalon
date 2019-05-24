@@ -2,6 +2,7 @@ package ua.salon.schedule;
 
 import ua.salon.schedule.dao.booking.BookingDAO;
 import ua.salon.schedule.singleton_executor.ScheduledExecutor;
+import ua.salon.schedule.ssl_email_sender.MailClient;
 
 import java.time.LocalDate;
 
@@ -13,6 +14,6 @@ public class Main {
         /*ScheduledGetAllBookingsCommandInvoker.threadInvoke();*/
         /*ScheduledGetAllBookingsCommandInvoker invoker = new ScheduledGetAllBookingsCommandInvoker();
         invoker.threadInvoke();*/
-        ScheduledExecutor.GET_ALL_BOOKINGS_COMMAND_INVOKER.threadInvoke();
+        ScheduledExecutor.INSTANCE.threadInvoke();
     }
 }
