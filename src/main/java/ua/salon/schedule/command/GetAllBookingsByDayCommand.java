@@ -16,7 +16,6 @@ public class GetAllBookingsByDayCommand extends Observable {
     private static final Logger rootLogger = LogManager.getRootLogger();
     private BookingService bookingService;
 
-
     public GetAllBookingsByDayCommand() {
         bookingService = ServiceFactory.getBookingService();
     }
@@ -27,9 +26,10 @@ public class GetAllBookingsByDayCommand extends Observable {
             System.out.println(booking.getClient().getEmail());
         }
         setChanged();
-        /*notifyObservers(result);*/
-        String string = "I did it";
+        notifyObservers(result);
+        /*String string = "I did it";
         notifyObservers(string);
+        System.out.println(result);*/
         rootLogger.debug("Observer MailClient.class was notified");
         /*return result;*/
     }

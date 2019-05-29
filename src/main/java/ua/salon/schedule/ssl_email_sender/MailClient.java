@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ua.salon.schedule.command.GetAllBookingsByDayCommand;
 import ua.salon.schedule.model.booking.Booking;
+import ua.salon.schedule.singleton_executor.ScheduledExecutor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +16,8 @@ public class MailClient implements Observer {
     private Observable observable;
     private static final Logger rootLogger = LogManager.getRootLogger();
 
-    public MailClient(Observable obs) {
-        observable = obs;
+    public MailClient() {
+        observable = ScheduledExecutor.INSTANCE.getCommand();
         observable.addObserver(this);
     }
 
@@ -28,15 +29,14 @@ public class MailClient implements Observer {
 
     @Override
     public void update(Observable obs, Object arg) {
-        rootLogger.debug("Some troubles are here");
+        rootLogger.debug("update() method started execution: "+this.getClass());
         if(obs instanceof GetAllBookingsByDayCommand) {
             rootLogger.debug("Observer was notified by GetAllBookingsByDayCommand.class extends Observable");
-            String result = (String)arg;
-            System.out.println(result);
-            /*ArrayList<Booking> result = ((ArrayList<Booking>) arg);
+            List<Booking> result = ((ArrayList<Booking>) arg);
             for (Booking booking : result) {
-                System.out.println(booking+"HOHOHO");
-            }*/
+                sslSender.send("Я отправила это со своего проекта", "Мне уже начинает нравиться! Эгегей!",  "ann.lubska@gmail.com", booking.getClient().getEmail());
+            }
+
         }
     }
 }

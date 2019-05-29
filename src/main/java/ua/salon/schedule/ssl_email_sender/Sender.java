@@ -9,7 +9,6 @@ import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
 class Sender {
-
     private static final Logger rootLogger = LogManager.getRootLogger();
 
     private String username;

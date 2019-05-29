@@ -23,25 +23,25 @@ public enum ScheduledExecutor {
         command = new GetAllBookingsByDayCommand();
     }
 
-    public static ScheduledExecutor getInstance(){
-        return INSTANCE;
+    public GetAllBookingsByDayCommand getCommand() {
+        return command;
     }
+
     public void threadInvoke() {
         ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Europe/Kiev"));
-        ZonedDateTime nextRun = now.withHour(18).withMinute(17).withSecond(0);
+        ZonedDateTime nextRun = now.withHour(17).withMinute(50).withSecond(0);
         rootLogger.debug("Next run of executor" + nextRun);
         if(now.compareTo(nextRun) > 0){
             nextRun = nextRun.plusDays(1);
-            System.out.println("nextRun"+nextRun);
+            rootLogger.debug("nextRun"+nextRun);
         }
         Duration duration = Duration.between(now, nextRun);
-        System.out.println("duration"+duration);
+        rootLogger.debug("duration"+duration);
         long initalDelay = duration.getSeconds();
-        System.out.println("initalDelay"+initalDelay);
+        rootLogger.debug("initalDelay"+initalDelay);
         try{
             Runnable task = () -> command.invokeDAO(LocalDate.now().toString());
             executor.scheduleAtFixedRate(task,initalDelay, TimeUnit.DAYS.toSeconds(1), TimeUnit.SECONDS);
-            System.out.println("Hope so!");
         } catch (Exception e) {
             rootLogger.warn("Exception occured in threadInvoke()", e);
         }
