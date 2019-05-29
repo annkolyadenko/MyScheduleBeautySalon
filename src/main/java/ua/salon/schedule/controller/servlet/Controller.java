@@ -25,9 +25,9 @@ public class Controller extends HttpServlet {
 
     @Override
     public void init() {
-        rootlogger.info("Servlet successfully initialized");
         ScheduledExecutor.INSTANCE.threadInvoke();
-        rootlogger.debug("Keep my fingers crossed!");
+        MailClient.getInstance();
+        rootlogger.info("Servlet successfully initialized");
     }
 
     @Override

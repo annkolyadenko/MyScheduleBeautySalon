@@ -12,13 +12,18 @@ import java.util.Observable;
 import java.util.Observer;
 
 ///**@Deprecated(since="9") see:https://docs.oracle.com/javase/9/docs/api/java/util/Observer.html*/
-public class MailClient implements Observer {
+public enum  MailClient implements Observer {
+    INSTANCE;
     private Observable observable;
     private static final Logger rootLogger = LogManager.getRootLogger();
 
-    public MailClient() {
+    MailClient() {
         observable = ScheduledExecutor.INSTANCE.getCommand();
-        observable.addObserver(this);
+        observable.addObserver(this::update);
+    }
+
+    public static MailClient getInstance() {
+        return INSTANCE;
     }
 
     private static ua.salon.schedule.ssl_email_sender.Sender sslSender = new ua.salon.schedule.ssl_email_sender.Sender("ann.lubska@gmail.com", "2204071anna");

@@ -10,13 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fb15509-7966-4279-a627-eee7406d04cf" name="Default" comment="scheduled thread implementation started">
-      <change afterPath="$PROJECT_DIR$/.idea/statistic.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/filters/CharsetFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/statistic.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/controller/servlet/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/controller/servlet/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/singleton_executor/ScheduledExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/singleton_executor/ScheduledExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/ssl_email_sender/MailClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/ssl_email_sender/MailClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/log/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/log/application.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,6 +63,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="beautysalon: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="beautysalon@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="beautysalon: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -69,24 +82,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="53">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="85">
+              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#1372#1373#0" expanded="true" />
+                <element signature="e#1413#1414#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,9 +113,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-151">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="-501">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#1129#1320#0" expanded="true" />
                 <element signature="e#1319#1320#0" expanded="true" />
               </folding>
@@ -105,25 +124,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            <state relative-caret-position="187">
+              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+            <state relative-caret-position="-76">
+              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="31" column="7" selection-start-line="31" selection-start-column="3" selection-end-line="37" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/filters/CharsetFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1213#1214#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,8 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/common/firewell.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/useful_utils/TimeUtil.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/94b36145-5bf2-44de-96f4-2020ecc70d72/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/connection_utils/connection_exceptions/ConnectionNotClosedException.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/connection_utils/DatasourceJNDI.java" />
@@ -188,19 +229,21 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/DisplayBookingsByMasterAndDateCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/user/UserDAO.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/scheduled_executor_util/ScheduledGetAllBookingsCommandInvoker.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/executor/ScheduledGetAllBookingsCommandInvoker.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton/ScheduledExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/filters/CharsetFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java" />
       </list>
     </option>
   </component>
@@ -303,14 +346,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyScheduleBeautySalon" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyScheduleBeautySalon" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -366,7 +401,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Tomcat Server.Tomcat">
     <configuration name="BookingDAOInvoker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ua.salon.schedule.scheduled_executor_util.BookingDAOInvoker" />
       <module name="MyScheduleBeautySalon" />
@@ -696,7 +731,7 @@
       <workItem from="1557998104662" duration="2327000" />
       <workItem from="1558374673675" duration="19881000" />
       <workItem from="1558530320298" duration="434000" />
-      <workItem from="1558531131323" duration="14723000" />
+      <workItem from="1558531131323" duration="34668000" />
     </task>
     <task id="LOCAL-00001" summary="4commit">
       <created>1555334247875</created>
@@ -880,11 +915,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558536498323</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="scheduled thread implementation started">
+      <created>1558727419880</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1558727419880</updated>
+    </task>
+    <task id="LOCAL-00028" summary="scheduled thread implementation started">
+      <created>1559110502631</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1559110502631</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="877956000" />
+    <option name="totallyTimeSpent" value="897901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -906,11 +955,11 @@
       <window_info id="Favorites" order="4" sideWeight="0.50756305" side_tool="true" weight="0.13657056" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" sideWeight="0.50163937" weight="0.245827" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49243698" visible="true" weight="0.25567323" />
-      <window_info anchor="bottom" id="Statistic" weight="0.3289689" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49243698" visible="true" weight="0.20953101" />
+      <window_info anchor="bottom" id="Statistic" weight="0.65139115" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32405892" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.1309329" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.43371522" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1007,28 +1056,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/web_resources/images/beauty5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/shitHappens.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://94b36145-5bf2-44de-96f4-2020ecc70d72/schema/beautysalon/table/booking">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/dependencies.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1218,13 +1245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/SessionRequestContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/SendReviewProposalToEmailCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1257,13 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2604">
           <caret line="271" column="18" selection-start-line="271" selection-start-column="18" selection-end-line="271" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://94b36145-5bf2-44de-96f4-2020ecc70d72/schema/beautysalon/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="77e3022e-3407-47d8-a8c3-7e565640e292">
-          <filtering />
         </state>
       </provider>
     </entry>
@@ -1320,13 +1333,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/executor/ScheduledGetAllBookingsCommandInvoker.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/booking/BookingDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-816">
@@ -1334,60 +1340,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/SessionRequestContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="56" column="76" selection-start-line="56" selection-start-column="76" selection-end-line="56" selection-end-column="76" />
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://94b36145-5bf2-44de-96f4-2020ecc70d72/schema/beautysalon/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="47277432-7f26-494b-993d-c12e3574616d">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/codec/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="-501">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#1129#1320#0" expanded="true" />
             <element signature="e#1319#1320#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/controller/servlet/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        <state relative-caret-position="85">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/GetAllBookingsByDayCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
+            <element signature="e#1372#1373#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+        <state relative-caret-position="53">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/filters/CharsetFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="65" selection-start-line="35" selection-start-column="65" selection-end-line="35" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="3" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/ScheduledExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
           </folding>
         </state>
       </provider>
