@@ -23,6 +23,8 @@ public class ApproveFeedbackCommand implements ActionCommand {
         rootLogger.debug("ApproveFeedbackCommand class started execute() ApproveFeedbackCommand method");
         String bookingId = request.getParameter("bookingId");
         rootLogger.debug("bookingId: " + bookingId);
+        String review = request.getParameter("review");
+        rootLogger.debug("review: " + review);
         return PagesJSP.FEEDBACK_APPROVED;
     }
 }
