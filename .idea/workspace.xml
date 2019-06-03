@@ -9,32 +9,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb15509-7966-4279-a627-eee7406d04cf" name="Default" comment="email sending features added">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedbackApproved.jsp" afterDir="false" />
+    <list default="true" id="0fb15509-7966-4279-a627-eee7406d04cf" name="Default" comment="feedback command added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/AddFeedbackCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/FeedbackProposalCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/FeedbackProposalCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/SendReviewProposalToEmailCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/ActionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/CommandEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/CommandEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/jsp_pages/PagesJSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/jsp_pages/PagesJSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/net/IPDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/net/IPDefiner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/TimeAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/TimeAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/EmailAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/EmailAttributes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/salon/schedule/ssl_email_sender/MailClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/authorized/client/feedback.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/booking.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/booking.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/bookingApproved.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/bookingApproved.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/GetAllBookingsByDayCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/GetAllBookingsByDayCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/SendReviewProposalToEmailCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/ActionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/ActionFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/CommandEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/factory/CommandEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/jsp_pages/PagesJSP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/command/jsp_pages/PagesJSP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/singleton_executor/ScheduledExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/singleton_executor/ScheduledExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/ssl_email_sender/MailClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/WEB-INF/classes/ua/salon/schedule/ssl_email_sender/MailClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/jsp/common/booking.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/jsp/common/booking.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MyScheduleBeautySalon/jsp/common/bookingApproved.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/MyScheduleBeautySalon/jsp/common/bookingApproved.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -99,11 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+            <state relative-caret-position="205">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#h5#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -115,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/navigation.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-187">
-              <caret line="154" column="63" selection-start-line="154" selection-start-column="63" selection-end-line="154" selection-end-column="63" />
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="81" />
               <folding>
                 <element signature="n#ctg:if-user#1;n#jsp:root#0;n#!!top" />
               </folding>
@@ -147,17 +125,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LoginCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="-85">
               <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/TimeAttributes.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -233,8 +211,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/common/feedback.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/jsp_pages/PagesJSP.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedbackApproved.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/TimeAttributes.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp" />
       </list>
     </option>
   </component>
@@ -834,7 +812,7 @@
       <workItem from="1558374673675" duration="19881000" />
       <workItem from="1558530320298" duration="434000" />
       <workItem from="1558531131323" duration="50919000" />
-      <workItem from="1559398825713" duration="31797000" />
+      <workItem from="1559398825713" duration="33053000" />
     </task>
     <task id="LOCAL-00001" summary="4commit">
       <created>1555334247875</created>
@@ -1046,11 +1024,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559542660165</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="feedback command added">
+      <created>1559574651704</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1559574651705</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="945949000" />
+    <option name="totallyTimeSpent" value="947205000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1072,10 +1057,10 @@
       <window_info id="Favorites" order="4" sideWeight="0.50756305" side_tool="true" weight="0.13657056" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Web" order="6" sideWeight="0.50163937" weight="0.24508321" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49243698" visible="true" weight="0.18078668" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49243698" visible="true" weight="0.18078668" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32405892" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.41898528" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.41898528" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1167,20 +1152,14 @@
     <MESSAGE value="backup is always a good idea!" />
     <MESSAGE value="scheduled thread implementation started" />
     <MESSAGE value="email sending features added" />
-    <option name="LAST_COMMIT_MESSAGE" value="email sending features added" />
+    <MESSAGE value="feedback command added" />
+    <option name="LAST_COMMIT_MESSAGE" value="feedback command added" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/useful_utils/Formatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/dao/DAOTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1502,16 +1481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/FeedbackProposalCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/factory/CommandEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1526,34 +1495,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LoginCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/jsp_pages/PagesJSP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/ApproveFeedbackCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/navigation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="154" column="63" selection-start-line="154" selection-start-column="63" selection-end-line="154" selection-end-column="63" />
-          <folding>
-            <element signature="n#ctg:if-user#1;n#jsp:root#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1573,20 +1518,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/TimeAttributes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/LoginCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/ApproveFeedbackCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/command/FeedbackProposalCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#h5#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/salon/schedule/singleton_executor/TimeAttributes.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/common/navigation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        <state relative-caret-position="-187">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="81" />
+          <folding>
+            <element signature="n#ctg:if-user#1;n#jsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/feedback/feedback.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#h5#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
