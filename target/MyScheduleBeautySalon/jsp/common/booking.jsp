@@ -30,7 +30,7 @@
                 </tr>
                 </tbody>
             </table>
-            <button type="submit" name="command" value="APPROVE_BOOKING">Submit</button>
+            <button class="btn btn-outline-dark" type="submit" name="command" value="APPROVE_BOOKING">Submit</button>
         </form>
     </div>
 </div>

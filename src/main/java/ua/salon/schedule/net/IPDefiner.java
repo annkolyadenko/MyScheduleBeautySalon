@@ -9,6 +9,7 @@ import java.net.UnknownHostException;
 
 public class IPDefiner {
     private static final Logger rootLogger = LogManager.getRootLogger();
+
     @Nullable
     public static String defineIP() {
         InetAddress currentIP = null;

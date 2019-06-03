@@ -2,7 +2,6 @@ package ua.salon.schedule.ssl_email_sender;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ua.salon.schedule.net.IPDefiner;
 import ua.salon.schedule.command.GetAllBookingsByDayCommand;
 import ua.salon.schedule.model.booking.Booking;
 import ua.salon.schedule.singleton_executor.ScheduledExecutor;
@@ -37,7 +36,7 @@ public enum  MailClient implements Observer {
             List<Booking> result = ((ArrayList<Booking>) arg);
             if (result.size() > 0) {
                 for (Booking booking : result) {
-                    sslSender.send(EmailAttributes.SUBJECT.getValue(), EmailAttributes.TEXT.getValue() + EmailAttributes.LINK.getValue(),EmailAttributes.FROM_EMAIL.getValue(), booking.getClient().getEmail());
+                    sslSender.send(EmailAttributes.SUBJECT.getValue(), EmailAttributes.TEXT.getValue() + EmailAttributes.IP.getValue() + EmailAttributes.PORT.getValue() + EmailAttributes.JSP_PAGE.getValue(), EmailAttributes.FROM_EMAIL.getValue(), booking.getClient().getEmail());
                 }
             }
         }

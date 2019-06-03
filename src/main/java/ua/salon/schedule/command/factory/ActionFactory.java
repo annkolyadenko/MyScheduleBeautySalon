@@ -1,7 +1,5 @@
 package ua.salon.schedule.command.factory;
 
-import ua.salon.schedule.command.LoginCommand;
-import ua.salon.schedule.command.SendReviewProposalToEmailCommand;
 import ua.salon.schedule.manager.MessageManager;
 
 import javax.servlet.http.HttpServletRequest;

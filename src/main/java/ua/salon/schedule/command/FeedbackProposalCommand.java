@@ -20,7 +20,21 @@ public class FeedbackProposalCommand implements ActionCommand {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
-        rootLogger.debug("FeedbackProposalCommand class started execute() LoginCommand method");
+        rootLogger.debug("FeedbackProposalCommand class started execute() FeedbackProposalCommand method");
+        String bookingId = request.getParameter("bookingId");
+        rootLogger.debug("bookingId: " + bookingId);
+        String bookingDate = request.getParameter("bookingDate");
+        rootLogger.debug("bookingDate: " + bookingDate);
+        request.setAttribute("bookingDate", bookingDate);
+        String bookingTime = request.getParameter("bookingTime");
+        rootLogger.debug("bookingTime: " + bookingTime);
+        request.setAttribute("bookingTime", bookingTime);
+        String masterName = request.getParameter("masterName");
+        rootLogger.debug("masterName: " + masterName);
+        request.setAttribute("masterName", masterName);
+        String userName = request.getParameter("userName");
+        rootLogger.debug("userName: " + userName);
+        request.setAttribute("userName", userName);
         return PagesJSP.FEEDBACK_PAGE;
     }
 }

@@ -44,6 +44,11 @@ public enum CommandEnum {
             this.command = new FeedbackProposalCommand();
         }
     },
+    APPROVE_FEEDBACK {
+        {
+            this.command = new ApproveFeedbackCommand();
+        }
+    },
     GET_BOOKINGS_BY_MASTER_AND_DATE {
         {
             this.command = new DisplayBookingsByMasterAndDateCommand();
