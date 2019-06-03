@@ -225,7 +225,9 @@ public class BookingDAO {
                 timeSlotEnd = mySqlEnd.toLocalDateTime();
                 booking.setBookingId(bookingId);
                 booking.setMaster(master);
+                rootLogger.debug("master: " + master);
                 booking.setClient(client);
+                rootLogger.debug("client: " + client);
                 booking.setTimeSlotStart(timeSlotStart);
                 booking.setTimeSlotEnd(timeSlotEnd);
             }

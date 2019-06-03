@@ -9,7 +9,6 @@
 <c:import url="/jsp/common/navigation.jsp"></c:import>
 <div class="container" style="height: 100%">
     <div class="row">
-        <br>
         <h5>Thank You! <i class="material-icons" style="color:red">local_florist</i></h5>
     </div>
 </div>

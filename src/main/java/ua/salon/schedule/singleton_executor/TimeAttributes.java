@@ -1,7 +1,7 @@
 package ua.salon.schedule.singleton_executor;
 
 public enum TimeAttributes {
-    SCHEDULED_HOUR(19), SCHEDULED_MINUTE(54),SCHEDULED_SECONDS(0);
+    SCHEDULED_HOUR(20), SCHEDULED_MINUTE(25),SCHEDULED_SECONDS(0);
 
     private int value;
 
