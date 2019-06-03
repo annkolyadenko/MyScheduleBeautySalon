@@ -33,8 +33,11 @@ class Sender {
                 return new PasswordAuthentication(username, password);
             }
         });
-
+        /**
+         * How to fix encoding in emails: https://docs.oracle.com/javaee/6/api/javax/mail/internet/package-summary.html
+         * */
         try {
+            System.setProperty("mail.mime.charset", "UTF-8");
             Message message = new MimeMessage(session);
             rootLogger.debug("Mail was created");
             message.setFrom(new InternetAddress(username));

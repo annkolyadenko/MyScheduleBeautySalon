@@ -11,3 +11,4 @@
                   defaultTransactionIsolation = "SERIALIZABLE"
                   url="jdbc:mysql://localhost:3306/beautysalon?useSSL=false"/>
 </Context>
+        <!--For MySQL CREATE TABLE => ENGINE=InnoDB DEFAULT CHARSET=utf8-->

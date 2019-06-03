@@ -39,6 +39,11 @@ public enum CommandEnum {
             this.command = new AddBookingCommand();
         }
     },
+    FEEDBACK {
+        {
+            this.command = new FeedbackProposalCommand();
+        }
+    },
     GET_BOOKINGS_BY_MASTER_AND_DATE {
         {
             this.command = new DisplayBookingsByMasterAndDateCommand();

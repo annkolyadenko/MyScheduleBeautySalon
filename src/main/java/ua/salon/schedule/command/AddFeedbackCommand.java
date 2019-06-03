@@ -5,7 +5,7 @@ import ua.salon.schedule.command.factory.ActionCommand;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class AddReviewCommand implements ActionCommand {
+public class AddFeedbackCommand implements ActionCommand {
 
 
     @Override

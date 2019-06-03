@@ -1,7 +1,7 @@
 package ua.salon.schedule.dao.user;
 
 import org.apache.logging.log4j.*;
-import ua.salon.schedule.codec.MD5Util;
+import ua.salon.schedule.utils.MD5Util;
 import ua.salon.schedule.connection_utils.ConnectionUtil;
 import ua.salon.schedule.connection_utils.DatasourceJNDI;
 import ua.salon.schedule.model.user.User;

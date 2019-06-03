@@ -1,4 +1,4 @@
-package ua.salon.schedule.codec;
+package ua.salon.schedule.utils;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

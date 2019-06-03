@@ -2,6 +2,7 @@ package ua.salon.schedule.ssl_email_sender;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ua.salon.schedule.net.IPDefiner;
 import ua.salon.schedule.command.GetAllBookingsByDayCommand;
 import ua.salon.schedule.model.booking.Booking;
 import ua.salon.schedule.singleton_executor.ScheduledExecutor;
@@ -26,11 +27,7 @@ public enum  MailClient implements Observer {
         return INSTANCE;
     }
 
-    private static ua.salon.schedule.ssl_email_sender.Sender sslSender = new ua.salon.schedule.ssl_email_sender.Sender("ann.lubska@gmail.com", "2204071anna");
-
-    public static void main(String[] args) {
-        sslSender.send("Я отправила это со своего проекта", "Мне уже начинает нравиться! Эгегей!",  "ann.lubska@gmail.com", "alexey.lubskiy@gmail.com");
-    }
+    private static ua.salon.schedule.ssl_email_sender.Sender sslSender = new ua.salon.schedule.ssl_email_sender.Sender(EmailAttributes.USERNAME.getValue(), EmailAttributes.PASSWORD.getValue());
 
     @Override
     public void update(Observable obs, Object arg) {
@@ -38,10 +35,11 @@ public enum  MailClient implements Observer {
         if(obs instanceof GetAllBookingsByDayCommand) {
             rootLogger.debug("Observer was notified by GetAllBookingsByDayCommand.class extends Observable");
             List<Booking> result = ((ArrayList<Booking>) arg);
-            for (Booking booking : result) {
-                sslSender.send("Я отправила это со своего проекта", "Мне уже начинает нравиться! Эгегей!",  "ann.lubska@gmail.com", booking.getClient().getEmail());
+            if (result.size() > 0) {
+                for (Booking booking : result) {
+                    sslSender.send(EmailAttributes.SUBJECT.getValue(), EmailAttributes.TEXT.getValue() + EmailAttributes.LINK.getValue(),EmailAttributes.FROM_EMAIL.getValue(), booking.getClient().getEmail());
+                }
             }
-
         }
     }
 }

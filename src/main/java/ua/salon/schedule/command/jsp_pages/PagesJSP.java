@@ -7,6 +7,7 @@ public interface PagesJSP {
     String SIGN_UP_PAGE = "/jsp/registration.jsp";
     String SIGN_IN_PAGE = "/jsp/common/login.jsp";
     String LOG_OUT_PAGE = "/jsp/common/firewell.jsp";
+    String FEEDBACK_PAGE = "/jsp/authorized/client/feedback.jsp";
     String CLIENT_PAGE = "/jsp/authorized/client/clientPage.jsp";
     String ADMIN_PAGE = "/jsp/authorized/administrator/adminPage.jsp";
     String MASTER_PAGE = "/jsp/authorized/master/masterPage.jsp";

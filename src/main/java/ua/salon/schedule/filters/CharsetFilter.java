@@ -5,6 +5,11 @@ import org.apache.logging.log4j.Logger;
 
 import javax.servlet.*;
 import java.io.IOException;
+/**
+ * This filter ensures that if the browser has not set the encoding used in the request, it has set UTF-8.
+ * The other thing that this filter does is set the default encoding of the response,
+ * i.e. the encoding in which the html is returned / whatever.
+ */
 
 public class CharsetFilter implements Filter {
     private String encoding;
