@@ -746,3 +746,135 @@ java.lang.NullPointerException: null
 2019-05-28 17:50:13,211 DEBUG u.s.s.s.Sender [pool-1-thread-1] Mail was created
 2019-05-28 17:50:14,704 DEBUG u.s.s.s.Sender [pool-1-thread-1] Mail successfully send to recipient
 2019-05-28 17:50:14,705 DEBUG u.s.s.c.GetAllBookingsByDayCommand [pool-1-thread-1] Observer MailClient.class was notified
+2019-06-06 11:37:29,990 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-06-06 11:38:43,525 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-06-06 11:38:43,615 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,663 INFO u.s.s.c.ConnectionUtil [main] Connection with database established
+2019-06-06 11:39:45,783 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,790 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,798 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,798 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,801 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,803 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,805 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,806 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,808 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,813 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,815 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,816 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,818 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,821 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,823 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,824 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,826 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,828 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,832 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,832 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,835 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,837 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,840 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,840 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,843 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,845 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,848 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,849 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,853 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,856 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,858 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,860 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,863 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,865 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,871 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,872 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,874 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,878 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,883 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,884 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,888 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,890 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,895 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,896 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,898 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,901 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,903 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,904 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,912 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,916 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,924 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,925 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,928 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,936 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,939 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,939 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,941 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,949 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,953 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,954 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,962 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,965 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,971 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,972 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,974 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,981 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,986 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,986 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,989 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,993 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:45,996 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:45,997 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:45,999 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,001 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,003 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,003 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,005 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,007 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,011 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,012 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,013 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,016 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,019 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,019 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,021 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,023 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,026 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,027 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,029 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,031 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,033 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,034 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,036 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,038 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,040 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,041 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,043 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,045 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,047 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,048 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,051 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,055 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,059 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,060 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,062 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,064 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,066 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,067 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,069 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,071 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,074 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,075 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,077 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,081 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,083 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,084 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,086 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,088 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,090 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,090 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,092 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,094 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,097 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,097 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}
+2019-06-06 11:39:46,102 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,105 DEBUG u.s.s.d.u.UserDAO [main] Connection is established
+2019-06-06 11:39:46,107 DEBUG u.s.s.d.b.BookingDAO [main] master: It's here!User{id=25, name='Yura', role=MASTER}
+2019-06-06 11:39:46,109 DEBUG u.s.s.d.b.BookingDAO [main] client: User{id=4, name='U2', role=CLIENT}

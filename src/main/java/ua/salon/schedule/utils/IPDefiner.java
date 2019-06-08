@@ -1,4 +1,4 @@
-package ua.salon.schedule.net;
+package ua.salon.schedule.utils;
 
 import com.sun.istack.internal.Nullable;
 import org.apache.logging.log4j.LogManager;

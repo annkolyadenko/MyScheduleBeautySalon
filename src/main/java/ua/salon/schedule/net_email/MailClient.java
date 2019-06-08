@@ -1,11 +1,14 @@
-package ua.salon.schedule.ssl_email_sender;
+package ua.salon.schedule.net_email;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ua.salon.schedule.command.GetAllBookingsByDayCommand;
 import ua.salon.schedule.model.booking.Booking;
-import ua.salon.schedule.singleton_executor.ScheduledExecutor;
+import ua.salon.schedule.utils.IPDefiner;
+import ua.salon.schedule.singleton_thread_executor.ScheduledExecutor;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
@@ -26,17 +29,26 @@ public enum  MailClient implements Observer {
         return INSTANCE;
     }
 
-    private static ua.salon.schedule.ssl_email_sender.Sender sslSender = new ua.salon.schedule.ssl_email_sender.Sender(EmailAttributes.USERNAME.getValue(), EmailAttributes.PASSWORD.getValue());
+    private static ua.salon.schedule.net_email.Sender sslSender = new ua.salon.schedule.net_email.Sender(EmailAttributes.USERNAME.getValue(), EmailAttributes.PASSWORD.getValue());
 
     @Override
     public void update(Observable obs, Object arg) {
-        rootLogger.debug("update() method started execution: "+this.getClass());
+        rootLogger.debug("update() method started execution: " + this.getClass());
         if(obs instanceof GetAllBookingsByDayCommand) {
             rootLogger.debug("Observer was notified by GetAllBookingsByDayCommand.class extends Observable");
             List<Booking> result = ((ArrayList<Booking>) arg);
             if (result.size() > 0) {
+                URL url;
                 for (Booking booking : result) {
-                    sslSender.send(EmailAttributes.SUBJECT.getValue(), EmailAttributes.TEXT.getValue() + EmailAttributes.IP.getValue() + EmailAttributes.PORT.getValue() + EmailAttributes.JSP_PAGE.getValue(), EmailAttributes.FROM_EMAIL.getValue(), booking.getClient().getEmail());
+                    try {
+                        url = new URL(URLParameters.getURLParameters());
+                        sslSender.send(EmailAttributes.SUBJECT.getValue(), (EmailAttributes.TEXT.getValue()
+                                + url + Spec.getURLSpec(booking)),
+                                EmailAttributes.FROM_EMAIL.getValue(), booking.getClient().getEmail());
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                        rootLogger.warn("MalformedURLException" + e.getClass());
+                    }
                 }
             }
         }

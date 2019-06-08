@@ -74,8 +74,8 @@ public class BookingDAO {
                 Booking booking = new Booking();
                 bookingId = rs.getInt("booking_id");
                 clientId = rs.getInt("booking_client_id");
-                master = userDao.findUserById(masterId);
-                client = userDao.findUserById(clientId);
+                master = userDao.getUserById(masterId);
+                client = userDao.getUserById(clientId);
                 Timestamp mySqlStart = rs.getTimestamp("schedule_slot_start");
                 Timestamp mySqlEnd = rs.getTimestamp("schedule_slot_end");
                 timeSlotStart = mySqlStart.toLocalDateTime();
@@ -123,8 +123,8 @@ public class BookingDAO {
                 bookingId = rs.getInt("booking_id");
                 clientId = rs.getInt("booking_client_id");
                 masterId = rs.getInt("booking_master_id");
-                client = userDao.findUserById(clientId);
-                master = userDao.findUserById(masterId);
+                client = userDao.getUserById(clientId);
+                master = userDao.getUserById(masterId);
                 Timestamp mySqlStart = rs.getTimestamp("schedule_slot_start");
                 Timestamp mySqlEnd = rs.getTimestamp("schedule_slot_end");
                 timeSlotStart = mySqlStart.toLocalDateTime();
@@ -172,8 +172,8 @@ public class BookingDAO {
                 Booking booking = new Booking();
                 bookingId = rs.getInt("booking_id");
                 clientId = rs.getInt("booking_client_id");
-                master = userDao.findUserById(masterId);
-                client = userDao.findUserById(clientId);
+                master = userDao.getUserById(masterId);
+                client = userDao.getUserById(clientId);
                 Timestamp mySqlStart = rs.getTimestamp("schedule_slot_start");
                 Timestamp mySqlEnd = rs.getTimestamp("schedule_slot_end");
                 timeSlotStart = mySqlStart.toLocalDateTime();
@@ -217,15 +217,15 @@ public class BookingDAO {
             while (rs.next()) {
                 masterId = rs.getInt("booking_master_id");
                 clientId = rs.getInt("booking_client_id");
-                master = userDao.findUserById(masterId);
-                client = userDao.findUserById(clientId);
+                master = userDao.getUserById(masterId);
+                client = userDao.getUserById(clientId);
                 Timestamp mySqlStart = rs.getTimestamp("schedule_slot_start");
                 Timestamp mySqlEnd = rs.getTimestamp("schedule_slot_end");
                 timeSlotStart = mySqlStart.toLocalDateTime();
                 timeSlotEnd = mySqlEnd.toLocalDateTime();
                 booking.setBookingId(bookingId);
                 booking.setMaster(master);
-                rootLogger.debug("master: " + master);
+                rootLogger.debug("master: It's here!" + master);
                 booking.setClient(client);
                 rootLogger.debug("client: " + client);
                 booking.setTimeSlotStart(timeSlotStart);

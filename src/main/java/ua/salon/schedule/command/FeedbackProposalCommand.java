@@ -27,7 +27,7 @@ public class FeedbackProposalCommand implements ActionCommand {
         request.setAttribute("bookingDate", bookingDate);
         String bookingTime = request.getParameter("bookingTime");
         rootLogger.debug("bookingTime: " + bookingTime);
-        /*request.setAttribute("bookingTime", bookingTime);*/
+        request.setAttribute("bookingTime", bookingTime);
         String masterName = request.getParameter("masterName");
         rootLogger.debug("masterName: " + masterName);
         request.setAttribute("masterName", masterName);

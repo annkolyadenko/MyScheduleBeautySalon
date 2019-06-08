@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <html>
@@ -30,7 +30,7 @@
                 </tr>
                 </tbody>
             </table>
-            <button class="btn btn-outline-dark" type="submit" name="command" value="APPROVE_BOOKING">Submit</button>
+            <button class="btn btn-dark" type="submit" name="command" value="APPROVE_BOOKING">Submit</button>
         </form>
     </div>
 </div>

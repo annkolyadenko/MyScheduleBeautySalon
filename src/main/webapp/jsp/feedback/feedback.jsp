@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
@@ -11,12 +11,11 @@
     <div class="row">
         <form method="POST" action="controller">
         <br>
-        <h5>Please, ${userName}, leave your feedback<i class="material-icons" style="color:red">favorite</i></h5>
+        <h4><i class="material-icons" style="color:red">favorite</i>Please, ${userName}, leave your feedback</h4>
 
-        <h5>Your date and time of visit: ${bookingDate} ${bookingTime} </h5>
-        <h5>Your master: ${masterName}</h5>
+        <h4>Your date and time of visit: ${bookingDate} ${bookingTime} </h4>
+        <h4>Your master: ${masterName}</h4>
         <br>
-            <label for="formControlTextarea">Your feedback</label>
             <textarea class="form-control" id="formControlTextarea" rows="3" name="review" value=""></textarea>
             <input type="hidden" name="bookingId" value=${bookingId}>
             <br>

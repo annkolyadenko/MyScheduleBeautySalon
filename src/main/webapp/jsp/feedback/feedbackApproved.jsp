@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
@@ -9,7 +9,7 @@
 <c:import url="/jsp/common/navigation.jsp"></c:import>
 <div class="container" style="height: 100%">
     <div class="row">
-        <h5>Thank You! <i class="material-icons" style="color:red">local_florist</i></h5>
+        <h4><i class="material-icons" style="color:red">local_florist</i> Thank You!</h4>
     </div>
 </div>
 </body>

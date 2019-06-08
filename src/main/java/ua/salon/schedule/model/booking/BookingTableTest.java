@@ -7,7 +7,7 @@ public class BookingTableTest {
     public static void main(String[] args) {
         BookingTable bookingTable = new BookingTable();
         UserDAO userDAO = new UserDAO();
-        User client = userDAO.findUserById(2);
+        User client = userDAO.getUserById(2);
         bookingTable.printValues();
 
 

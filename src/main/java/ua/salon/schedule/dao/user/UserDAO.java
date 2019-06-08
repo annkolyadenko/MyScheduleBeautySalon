@@ -79,20 +79,20 @@ public class UserDAO{
         }
     }
 
-    public User findUserById(int idPk) {
+    public User getUserById(int id) {
         PreparedStatement ps = null;
         ResultSet resultSet = null;
         User user = new User();
         String role = null;
         try {
-            /*connection = DatasourceJNDI.getConnection();*/
-            connection = ConnectionUtil.getConnection();
+            connection = DatasourceJNDI.getConnection();
+            /*connection = ConnectionUtil.getConnection();*/
             rootlogger.debug("Connection is established");
             ps = connection.prepareStatement(FIND_USER_BY_ID);
-            ps.setInt(1,idPk);
+            ps.setInt(1,id);
             resultSet = ps.executeQuery();
-            if(resultSet.next()){
-                user.setId(idPk);
+            while (resultSet.next()){
+                user.setId(id);
                 user.setName(resultSet.getString("user_name"));
                 role = resultSet.getString("user_role");
                 user.setRole(UserRole.valueOf(role));
@@ -164,7 +164,7 @@ public class UserDAO{
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
                 userId = rs.getInt("user_id");
-                user = userDAO.findUserById(userId);
+                user = userDAO.getUserById(userId);
                 mastersList.add(user);
             }
         } catch (SQLException e) {

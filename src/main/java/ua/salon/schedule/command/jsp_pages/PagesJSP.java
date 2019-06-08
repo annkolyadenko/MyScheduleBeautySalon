@@ -9,6 +9,7 @@ public interface PagesJSP {
     String LOG_OUT_PAGE = "/jsp/common/firewell.jsp";
     String FEEDBACK_PAGE = "/jsp/feedback/feedback.jsp";
     String FEEDBACK_APPROVED = "/jsp/feedback/feedbackApproved.jsp";
+    String FEEDBACK_NOT_APPROVED = "/jsp/feedback/feedbackNotApproved.jsp";
     String CLIENT_PAGE = "/jsp/authorized/client/clientPage.jsp";
     String ADMIN_PAGE = "/jsp/authorized/administrator/adminPage.jsp";
     String MASTER_PAGE = "/jsp/authorized/master/masterPage.jsp";

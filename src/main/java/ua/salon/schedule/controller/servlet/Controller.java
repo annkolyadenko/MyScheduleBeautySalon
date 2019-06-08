@@ -4,8 +4,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ua.salon.schedule.command.factory.ActionCommand;
 import ua.salon.schedule.command.factory.ActionFactory;
-import ua.salon.schedule.singleton_executor.ScheduledExecutor;
-import ua.salon.schedule.ssl_email_sender.MailClient;
+import ua.salon.schedule.singleton_thread_executor.ScheduledExecutor;
+import ua.salon.schedule.net_email.MailClient;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

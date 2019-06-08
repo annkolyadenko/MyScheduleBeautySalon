@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <html>
@@ -84,7 +84,7 @@
                                min="${today}">
                     </p>
                     <p>
-                        <button type="submit" name="command" value="GET_BOOKINGS_BY_MASTER_AND_DATE">Submit</button>
+                        <button class="btn btn-dark" type="submit" name="command" value="GET_BOOKINGS_BY_MASTER_AND_DATE">Submit</button>
                     </p>
                 </form>
             </ctg:if-user>

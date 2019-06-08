@@ -7,6 +7,9 @@ body{
     height: 100%;
     padding-bottom: 80px;
 }
+body > div .container{
+    margin-top: 40px;
+}
 img{
     max-width: 100%;
     height: auto;
@@ -45,9 +48,6 @@ img.beauty3{
     text-align: center;
     color: #545353;
 }
-/*footer hr{
-    border-color: #545353;
-}*/
 .footer {
     position: absolute;
     bottom: 0;
@@ -55,22 +55,7 @@ img.beauty3{
     height: 80px;
     border-color: #545353;
 }
-/*need 2 be done: 4 button padding-bottom!!!*/
 
-/*table {
-    padding-bottom: 1px;!important;
-    vertical-align: bottom;!important;
-}
-.table {
-    padding-bottom: 1px;!important;
-    vertical-align: bottom;!important;
-}
-button {
-    margin-bottom: 1px;!important;
-}
-.btn {
-    margin-bottom: 1px;!important;
-}*/
 
 
 

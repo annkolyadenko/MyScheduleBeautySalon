@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <!doctype html>
@@ -49,7 +49,7 @@
                                  <br/>--%>
                                 <div class="form-group">
                                     <label class="sr-only" for="submit">Submit</label>
-                                    <input type="submit" class="form-control mb-1 bg-secondary text-white" id="submit"
+                                    <input type="submit" class="form-control mb-1 bg-dark text-white" id="submit"
                                            value="Submit">
                                     <div class="help-block text-right"
                                          style="font-size: 12px; text-transform: lowercase"><a href="">Forget the
@@ -57,7 +57,10 @@
                                 </div>
                             </form>
                             <div class="bottom text-center" style="font-size: 12px; text-transform: none">
-                                New here ? <a class="form-control mb-1 bg-secondary text-white" href="#"><b>Join Us</b></a>
+                                <label class="sr-only" for="joinUs">Submit</label>
+                                <input type="submit" class="form-control mb-1 bg-dark text-white" id="joinUs"
+                                       value="Join Us">
+                               <%-- New here ? <a class="form-control mb-1 bg-secondary text-white" href="#"><b>Join Us</b></a>--%>
                             </div>
                         </div>
                     </li>
@@ -200,7 +203,7 @@
                         <a class="nav-link" href="/controller?command=LOGOUT">Log out</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/controller?command=FEEDBACK"><%--Prices--%>Feedback</a>
+                        <a class="nav-link" href="#">Prices</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>

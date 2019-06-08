@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
@@ -7,10 +8,10 @@
 <body>
 <c:import url="/jsp/common/navigation.jsp"></c:import>
 <div class="container" style="height: 100%">
-    <h3>
+    <h4>
         Good bye!
         Thank you for visiting!
-    </h3>
+    </h4>
 </div>
 <%--<hr/>
 <form name="goToLoginPageAgain">

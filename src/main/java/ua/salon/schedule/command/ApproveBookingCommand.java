@@ -9,8 +9,8 @@ import ua.salon.schedule.services.BookingService;
 import ua.salon.schedule.services.service_factory.ServiceFactory;
 
 import ua.salon.schedule.model.user.User;
-import ua.salon.schedule.useful_utils.Formatter;
-import ua.salon.schedule.useful_utils.TimeUtil;
+import ua.salon.schedule.utils.Formatter;
+import ua.salon.schedule.utils.TimeUtil;
 
 import java.time.LocalDateTime;
 

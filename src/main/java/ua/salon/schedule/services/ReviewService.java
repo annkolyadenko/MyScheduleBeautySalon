@@ -16,7 +16,11 @@ public class ReviewService {
         reviewDAO.addReview(review);
     }
 
-    public List<Review> getReviewsByMasterID(int masterId) {
-        return reviewDAO.getReviewsByMasterID(masterId);
+    public List<Review> getReviewsByMasterId(int masterId) {
+        return reviewDAO.getReviewsByMasterId(masterId);
+    }
+
+    public List<Review> getReviewByBookingId(int bookingId) {
+        return reviewDAO.getReviewByBookingId(bookingId);
     }
 }

@@ -1,4 +1,4 @@
-package ua.salon.schedule.singleton_executor;
+package ua.salon.schedule.singleton_thread_executor;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

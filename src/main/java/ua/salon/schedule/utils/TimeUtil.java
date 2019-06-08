@@ -1,4 +1,4 @@
-package ua.salon.schedule.useful_utils;
+package ua.salon.schedule.utils;
 
 public class TimeUtil {
     private static final int timeGap = 1;

@@ -12,6 +12,8 @@ import ua.salon.schedule.services.service_factory.ServiceFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Collections;
+import java.util.List;
 
 public class ApproveFeedbackCommand implements ActionCommand {
     private static final Logger rootLogger = LogManager.getRootLogger();
@@ -31,12 +33,19 @@ public class ApproveFeedbackCommand implements ActionCommand {
         String review = request.getParameter("review");
         rootLogger.debug("review: " + review);
 
-        Review rw = new Review();
+
         Booking booking = bookingService.getBookingById(Integer.valueOf(bookingId));
-        rw.setText(review);
-        rw.setBooking(booking);
-        rootLogger.debug("Review: "+rw);
-        reviewService.addReview(rw);
-        return PagesJSP.FEEDBACK_APPROVED;
+        List<Review> reviwList = reviewService.getReviewByBookingId(Integer.valueOf(bookingId));
+        rootLogger.debug("Review exist check: " + reviwList);
+        if(reviwList.isEmpty()){
+            Review rw = new Review();
+            rw.setText(review);
+            rw.setBooking(booking);
+            rootLogger.debug("Review: "+rw);
+            reviewService.addReview(rw);
+            return PagesJSP.FEEDBACK_APPROVED;
+        }
+        rootLogger.debug("Feedback already exist");
+       return PagesJSP.FEEDBACK_NOT_APPROVED;
     }
 }

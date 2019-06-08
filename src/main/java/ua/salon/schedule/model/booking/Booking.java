@@ -2,7 +2,7 @@ package ua.salon.schedule.model.booking;
 
 import ua.salon.schedule.model.user.User;
 import ua.salon.schedule.model.user.UserRole;
-import ua.salon.schedule.useful_utils.Formatter;
+import ua.salon.schedule.utils.Formatter;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -41,6 +41,14 @@ public class Booking {
 
     public Integer getTime(){
         return timeSlotStart.getHour();
+    }
+
+    public String getTimeFormatter(){
+        return timeSlotStart.format(Formatter.getTimeFormatter());
+    }
+
+    public String getDateFormatter(){
+        return timeSlotStart.format(Formatter.getDateFormatter());
     }
 
     public void setTimeSlotStart(LocalDateTime timeSlotStart) {

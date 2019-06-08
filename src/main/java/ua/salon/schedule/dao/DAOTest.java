@@ -1,16 +1,10 @@
 package ua.salon.schedule.dao;
 
-import ua.salon.schedule.command.GetAllBookingsByDayCommand;
 import ua.salon.schedule.connection_utils.connection_exceptions.ConnectionNotOpenedException;
-import ua.salon.schedule.dao.booking.BookingDAO;
-import ua.salon.schedule.model.booking.Booking;
-import ua.salon.schedule.useful_utils.Formatter;
-import ua.salon.schedule.useful_utils.TimeUtil;
+import ua.salon.schedule.dao.review.ReviewDAO;
+import ua.salon.schedule.model.review.Review;
 
 import java.sql.SQLException;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class DAOTest {
@@ -50,6 +44,9 @@ public class DAOTest {
         List<Booking> bookingsForToday = bookingDAO.getAllBookingsByDate(LocalDate.now().toString());*/
         /*GetAllBookingsByDayCommand command = new GetAllBookingsByDayCommand();
                 command.invokeDAO(LocalDate.now().toString());*/
+       /* ReviewDAO dao = new ReviewDAO();
+        List<Review> reviewList = dao.getReviewByBookingId(71);
+        System.out.println(reviewList);*/
 
     }
 }

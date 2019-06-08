@@ -1,4 +1,4 @@
-package ua.salon.schedule.ssl_email_sender;
+package ua.salon.schedule.net_email;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

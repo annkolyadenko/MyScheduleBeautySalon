@@ -27,7 +27,7 @@ public class UserService {
 
     public User findUserById(int id) {
         rootlogger.debug("invoking userDAO.findUserById(id) method");
-        return  userDAO.findUserById(id);
+        return  userDAO.getUserById(id);
 
     }
 
